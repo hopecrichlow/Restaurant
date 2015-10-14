@@ -1,2 +1,78 @@
 @import'bourbon/bourbon';
 @import'neat/neat';
+
+
+#mainPage {
+
+
+  #container1 {
+
+//------------------------------------------
+    #logoRow1 {
+
+      #logo {
+
+        } //end of logp
+
+      #socialMedia {
+
+        } //end of socialMedia
+
+    } //end of logoRow1
+
+//------------------------------------------    
+
+    #imgRow2 {
+      
+      
+
+    } //end of imgRow2
+
+//------------------------------------------
+
+
+    #updateInfoRow3 {
+      
+      .glance {
+
+      
+        #latestNews {
+
+        } //end of latestNews
+
+        #todaySpecial {
+
+          }//end of todaySpeacial
+
+         #map {
+
+         } //end of map
+
+       } //end of .glance
+      
+    } //end of Row3
+
+//------------------------------------------
+
+
+  } //end of container1
+
+  #container2 {
+
+    #dynamicContent{
+
+      } //end of dynamicContent
+
+     .foodPhotos {
+
+     } //end of foodPhotes
+
+  } //end of container2
+
+
+
+} //end of mainPage
+
+footer {
+    
+  } //end of footer
