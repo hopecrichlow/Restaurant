@@ -4,17 +4,35 @@
 
 #mainPage {
 
+  #asideNav {
+    background-color: orange;
+    @include span-columns(2);
+    height: 400px;
+  }
+ #containerWrapper { 
+   @include span-columns(7);
 
   #container1 {
+    background-color: pink;
+    height: 400px;
+
 
 //------------------------------------------
     #logoRow1 {
+      background-color: green;
+      height: 80px;
 
       #logo {
+        width: 45%;
+        height: 70px;
+        background-color: yellow;
 
         } //end of logp
 
       #socialMedia {
+        width: 45%;
+        height: 70px;
+        background-color: pink;
 
         } //end of socialMedia
 
@@ -23,7 +41,8 @@
 //------------------------------------------    
 
     #imgRow2 {
-      
+      background-color: yellow;
+      height: 80px;
       
 
     } //end of imgRow2
@@ -32,8 +51,16 @@
 
 
     #updateInfoRow3 {
-      
+      background-color: purple;
+      height: 80px;
+
       .glance {
+        background-color: grey;
+        width: 30%;
+        height: 70px;
+        float: left;
+        overflow: hidden;
+        margin: 0 20px 0 0;
 
       
         #latestNews {
@@ -58,21 +85,37 @@
   } //end of container1
 
   #container2 {
+    background-color: red;
+    height: 500px;
 
     #dynamicContent{
+      background-color: orange;
+      width: 50%;
+      height: 400px;
+      float: left;
+
 
       } //end of dynamicContent
-
+    #foodPhotosContainer {
+      background-color: blue;
+      width: 20%;
+      float: right;
+      height: 200px;
+    }
      .foodPhotos {
+
 
      } //end of foodPhotes
 
   } //end of container2
+ } //end of containerWrapper 
 
 
 
 } //end of mainPage
 
 footer {
-    
+    background-color: yellow;
+    width: 100%;
+    height: 200px;
   } //end of footer
