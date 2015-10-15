@@ -116,6 +116,22 @@ img {
         width: 70%;
         height: 1200px;
         float: left; }
+        #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper {
+          width: 100%; }
+          #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabs li {
+            background: none;
+            background-color: pink;
+            display: inline-block;
+            padding: 10px 15px;
+            cursor: pointer; }
+          #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabs li.open {
+            background: white; }
+          #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabContent {
+            display: none;
+            background: white;
+            padding: 15px; }
+          #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabContent.open {
+            display: block; }
       #mainPage #containerWrapper #container2 #foodPhotosContainer {
         background-color: blue;
         float: right;

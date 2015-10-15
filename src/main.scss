@@ -1,6 +1,6 @@
 @import'bourbon/bourbon';
 @import'neat/neat';
- 
+  
 body {
   font-family: serif;
   position: relative;
@@ -162,14 +162,41 @@ img {
     overflow: hidden;
    
 
-    #dynamicContent{
+    #dynamicContent {
       background-color: orange;
       width: 70%;
       height: 1200px;
       float: left;
 
+      .tabWrapper {
+        width: 100%;
+      
 
-      } //end of dynamicContent
+      .tabs li {
+        background: none;
+        background-color: pink;
+        display: inline-block;
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+
+      .tabs li.open {
+        background: white;
+       
+      }
+      .tabContent {
+        display: none;
+        background: white;
+        padding: 15px;
+      }
+
+      .tabContent.open {
+        display: block;
+      }
+      
+    } //end of tabWrapper
+
+  } //end of dynamicContent
     #foodPhotosContainer {
       background-color: blue;
       float: right;
