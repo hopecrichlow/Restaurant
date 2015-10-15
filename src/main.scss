@@ -130,13 +130,11 @@ img {
     #updateInfoRow3 {
       @include span-columns(12);
       background-color: $mainBackgroundColor;
-      
-
+    
       .glance {
         @include span-columns(4 of 12);
         border: $mainBorder;
         background-color: #E1E1E1; //light green
-        // float: left;
         padding: 2%;
 
         #latestNews {
