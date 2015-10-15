@@ -35,12 +35,7 @@ img {
     content: "";
     display: table; }
   #mainPage #asideNav {
-    height: 1200px;
     float: left; }
-    #mainPage #asideNav #fixed {
-      position: fixed; }
-      #mainPage #asideNav #fixed li {
-        line-height: 2em; }
   #mainPage #containerWrapper {
     float: left;
     display: block;
