@@ -1,5 +1,9 @@
 @import'bourbon/bourbon';
 @import'neat/neat';
+
+//Variables
+$mainBackgroundColor: #FFFFFF;
+$dividingBorder: 2px solid #D0D0D0;
  
 body {
   font-family: serif;
@@ -186,9 +190,12 @@ img {
   } //end of container2
   footer {
     clear: both;
+    background-color: $mainBackgroundColor;
+    border-top: $dividingBorder;
+    padding-top: 25px;
     width: 100%;
-    background-color: yellow;
-    height: 100px;
+    height: 90px;
+    font-size: 1em;
   } //end of footer
 
  } //end of containerWrapper 
