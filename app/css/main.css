@@ -41,8 +41,7 @@ img {
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    background-color: green;
-    float: left; }
+    background-color: green; }
     #mainPage #containerWrapper:last-child {
       margin-right: 0; }
     #mainPage #containerWrapper #container1 {
@@ -106,17 +105,11 @@ img {
           width: 31.76157%;
           border: 1px solid #B3B3B3;
           background-color: #E1E1E1;
-          float: left;
           padding: 2%; }
           #mainPage #containerWrapper #container1 #updateInfoRow3 .glance:last-child {
             margin-right: 0; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #latestNews {
-            margin: 0; }
           #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #todaySpecial {
-            margin-right: 0;
-            margin: 0; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map {
-            margin: 0; }
+            margin-right: 0; }
     #mainPage #containerWrapper #container2 {
       clear: both;
       background-color: red;
