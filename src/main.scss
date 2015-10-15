@@ -60,13 +60,51 @@ img {
         background-color: blue;
         } //end of logo
 
+
       #socialMedia {
         width: 35%;
         height: 70px;
         float: right;
         background-color: red;
 
-        } //end of socialMedia
+        } 
+     #socialMedia{
+
+        width: 20%;
+        float: right;
+        padding-left: 4%;
+        margin-top: 10px;
+
+        ul{
+          padding-left: 0;
+        }
+
+        li{
+             display: inline-block;
+          }
+         #fb{
+             content: "";
+             background: url('../images/social_sprite.png') no-repeat -1px -3px;
+             background-size: 100px 100px;
+             width: 44px;
+             height: 43px;
+           }
+         #twitter{
+              background: url('../images/social_sprite.png') no-repeat -47px -2px;
+              background-size: 100px 100px;
+              width: 44px;
+              height: 44px;
+
+         }
+         #insta{
+              background: url('../images/social_sprite.png') no-repeat -1px -49px;
+              background-size: 100px 100px;
+              width: 44px;
+              height: 43px;
+         }
+
+      }
+
 
     } //end of logoRow1
 
