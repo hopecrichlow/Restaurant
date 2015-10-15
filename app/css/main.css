@@ -96,10 +96,12 @@ img {
             width: 44px;
             height: 43px; }
       #mainPage #containerWrapper #container1 #imgRow2 {
-        height: 400px;
+        height: 350px;
         width: 100%;
-        background-image: url("../images/8315003094_3ee7c73ef4_c.jpg");
-        background-image: cover; }
+        margin-bottom: 10px; }
+        #mainPage #containerWrapper #container1 #imgRow2 img {
+          width: 1200px;
+          height: 350px; }
       #mainPage #containerWrapper #container1 #updateInfoRow3 {
         background-color: purple; }
         #mainPage #containerWrapper #container1 #updateInfoRow3 .glance {

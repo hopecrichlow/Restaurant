@@ -110,11 +110,18 @@ img {
 //------------------------------------------    
 
     #imgRow2{
-    height:400px;
+    height:350px;
     width:100%;
-    background-image:url("../images/8315003094_3ee7c73ef4_c.jpg");
-    background-image:cover;
-    } //end of imgRow2
+    margin-bottom :10px;
+    // background-color:yellow;
+
+  img{
+    width: 1200px;
+    height:350px;
+  }
+    
+ } //end of imgRow2
+  
 
 //------------------------------------------
 
