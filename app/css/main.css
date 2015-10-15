@@ -6,10 +6,10 @@ html {
 *::before {
   box-sizing: inherit; }
 
-<<<<<<< HEAD
 body {
   font-family: serif;
-  position: relative; }
+  position: relative;
+  font-size: 62.5%; }
 
 a {
   text-decoration: none;
@@ -29,7 +29,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
-  padding: 25px;
   background-color: #94D3F0; }
   #mainPage::after {
     clear: both;
@@ -40,7 +39,8 @@ img {
     display: block;
     margin-right: 2.35765%;
     width: 14.70196%;
-    height: 1200px; }
+    height: 1200px;
+    float: left; }
     #mainPage #asideNav:last-child {
       margin-right: 0; }
     #mainPage #asideNav #fixed {
@@ -52,32 +52,54 @@ img {
     display: block;
     margin-right: 2.35765%;
     width: 82.94039%;
-    background-color: green; }
+    background-color: green;
+    float: left; }
     #mainPage #containerWrapper:last-child {
       margin-right: 0; }
     #mainPage #containerWrapper #container1 {
-      background-color: pink;
-      margin: 20px 0;
-      padding: 20px 0; }
+      background-color: pink; }
       #mainPage #containerWrapper #container1 #logoRow1 {
         background-color: grey;
-        height: 200px; }
+        padding: 2%;
+        overflow: hidden; }
         #mainPage #containerWrapper #container1 #logoRow1 #logo {
           width: 25%;
-          height: 70px;
+          padding: 2%;
           float: left;
           background-color: blue; }
         #mainPage #containerWrapper #container1 #logoRow1 #socialMedia {
           width: 35%;
-          height: 70px;
           float: right;
+          padding-left: 4%;
+          margin-top: 10px;
           background-color: red; }
+          #mainPage #containerWrapper #container1 #logoRow1 #socialMedia ul {
+            padding-left: 0; }
+          #mainPage #containerWrapper #container1 #logoRow1 #socialMedia li {
+            display: inline-block; }
+          #mainPage #containerWrapper #container1 #logoRow1 #socialMedia #fb {
+            content: "";
+            background: url("../images/social_sprite.png") no-repeat -1px -3px;
+            background-size: 100px 100px;
+            width: 44px;
+            height: 43px; }
+          #mainPage #containerWrapper #container1 #logoRow1 #socialMedia #twitter {
+            content: "";
+            background: url("../images/social_sprite.png") no-repeat -47px -2px;
+            background-size: 100px 100px;
+            width: 44px;
+            height: 44px; }
+          #mainPage #containerWrapper #container1 #logoRow1 #socialMedia #insta {
+            content: "";
+            background: url("../images/social_sprite.png") no-repeat -1px -49px;
+            background-size: 100px 100px;
+            width: 44px;
+            height: 43px; }
       #mainPage #containerWrapper #container1 #imgRow2 {
         background-color: yellow;
-        height: 290px; }
+        padding: 2%; }
       #mainPage #containerWrapper #container1 #updateInfoRow3 {
-        background-color: purple;
-        height: 200px; }
+        background-color: purple; }
         #mainPage #containerWrapper #container1 #updateInfoRow3 .glance {
           background-color: #76C63D;
           width: 31%;
@@ -106,31 +128,4 @@ img {
       clear: both;
       width: 100%;
       background-color: yellow;
-      height: 200px; }
-=======
-#mainPage #container1 #logoRow1 #socialMedia {
-  width: 20%;
-  float: right;
-  padding-left: 4%;
-  margin-top: 10px; }
-  #mainPage #container1 #logoRow1 #socialMedia ul {
-    padding-left: 0; }
-  #mainPage #container1 #logoRow1 #socialMedia li {
-    display: inline-block; }
-  #mainPage #container1 #logoRow1 #socialMedia #fb {
-    content: "";
-    background: url("../images/social_sprite.png") no-repeat -1px -3px;
-    background-size: 100px 100px;
-    width: 44px;
-    height: 43px; }
-  #mainPage #container1 #logoRow1 #socialMedia #twitter {
-    background: url("../images/social_sprite.png") no-repeat -47px -2px;
-    background-size: 100px 100px;
-    width: 44px;
-    height: 44px; }
-  #mainPage #container1 #logoRow1 #socialMedia #insta {
-    background: url("../images/social_sprite.png") no-repeat -1px -49px;
-    background-size: 100px 100px;
-    width: 44px;
-    height: 43px; }
->>>>>>> b844f3e986011b77ff232160f2cdb9beedcf801e
+      height: 100px; }
