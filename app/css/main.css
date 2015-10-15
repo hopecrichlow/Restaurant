@@ -6,28 +6,126 @@ html {
 *::before {
   box-sizing: inherit; }
 
-#mainPage #container1 #logoRow1 #socialMedia {
-  width: 20%;
-  float: right;
-  padding-left: 4%;
-  margin-top: 10px; }
-  #mainPage #container1 #logoRow1 #socialMedia ul {
-    padding-left: 0; }
-  #mainPage #container1 #logoRow1 #socialMedia li {
-    display: inline-block; }
-  #mainPage #container1 #logoRow1 #socialMedia #fb {
+body {
+  font-family: serif;
+  position: relative;
+  font-size: 62.5%; }
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0; }
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%; }
+
+#mainPage {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  background-color: #94D3F0; }
+  #mainPage::after {
+    clear: both;
     content: "";
-    background: url("../images/social_sprite.png") no-repeat -1px -3px;
-    background-size: 100px 100px;
-    width: 44px;
-    height: 43px; }
-  #mainPage #container1 #logoRow1 #socialMedia #twitter {
-    background: url("../images/social_sprite.png") no-repeat -47px -2px;
-    background-size: 100px 100px;
-    width: 44px;
-    height: 44px; }
-  #mainPage #container1 #logoRow1 #socialMedia #insta {
-    background: url("../images/social_sprite.png") no-repeat -1px -49px;
-    background-size: 100px 100px;
-    width: 44px;
-    height: 43px; }
+    display: table; }
+  #mainPage #asideNav {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    height: 1200px;
+    float: left; }
+    #mainPage #asideNav:last-child {
+      margin-right: 0; }
+    #mainPage #asideNav #fixed {
+      position: fixed; }
+      #mainPage #asideNav #fixed li {
+        line-height: 2em; }
+  #mainPage #containerWrapper {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    background-color: green;
+    float: left; }
+    #mainPage #containerWrapper:last-child {
+      margin-right: 0; }
+    #mainPage #containerWrapper #container1 {
+      background-color: pink; }
+      #mainPage #containerWrapper #container1 #logoRow1 {
+        background-color: grey;
+        padding: 2%;
+        overflow: hidden; }
+        #mainPage #containerWrapper #container1 #logoRow1 #logo {
+          width: 25%;
+          padding: 2%;
+          float: left;
+          background-color: blue; }
+        #mainPage #containerWrapper #container1 #logoRow1 #socialMedia {
+          width: 35%;
+          float: right;
+          padding-left: 4%;
+          margin-top: 10px;
+          background-color: red; }
+          #mainPage #containerWrapper #container1 #logoRow1 #socialMedia ul {
+            padding-left: 0; }
+          #mainPage #containerWrapper #container1 #logoRow1 #socialMedia li {
+            display: inline-block; }
+          #mainPage #containerWrapper #container1 #logoRow1 #socialMedia #fb {
+            content: "";
+            background: url("../images/social_sprite.png") no-repeat -1px -3px;
+            background-size: 100px 100px;
+            width: 44px;
+            height: 43px; }
+          #mainPage #containerWrapper #container1 #logoRow1 #socialMedia #twitter {
+            content: "";
+            background: url("../images/social_sprite.png") no-repeat -47px -2px;
+            background-size: 100px 100px;
+            width: 44px;
+            height: 44px; }
+          #mainPage #containerWrapper #container1 #logoRow1 #socialMedia #insta {
+            content: "";
+            background: url("../images/social_sprite.png") no-repeat -1px -49px;
+            background-size: 100px 100px;
+            width: 44px;
+            height: 43px; }
+      #mainPage #containerWrapper #container1 #imgRow2 {
+        background-color: yellow;
+        padding: 2%; }
+      #mainPage #containerWrapper #container1 #updateInfoRow3 {
+        background-color: purple; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance {
+          background-color: #76C63D;
+          width: 31%;
+          overflow: hidden;
+          float: left;
+          margin: 0 2% 0 0;
+          padding: 2%; }
+    #mainPage #containerWrapper #container2 {
+      clear: both;
+      background-color: red;
+      overflow: hidden; }
+      #mainPage #containerWrapper #container2 #dynamicContent {
+        background-color: orange;
+        width: 70%;
+        height: 1200px;
+        float: left; }
+      #mainPage #containerWrapper #container2 #foodPhotosContainer {
+        background-color: blue;
+        float: right;
+        width: 23%; }
+      #mainPage #containerWrapper #container2 .foodPhotos {
+        height: 200px;
+        background-color: grey;
+        margin: 0 0 20px 0; }
+    #mainPage #containerWrapper footer {
+      clear: both;
+      width: 100%;
+      background-color: yellow;
+      height: 100px; }

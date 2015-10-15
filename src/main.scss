@@ -1,60 +1,117 @@
 @import'bourbon/bourbon';
 @import'neat/neat';
  
+body {
+  font-family: serif;
+  position: relative;
+  font-size: 62.5%;
 
+} 
+a { 
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+} 
+ul, li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} 
+img {
+  max-width: 100%;
+}
+ 
 #mainPage {
+  @include outer-container;
+  max-width: 1200px;
+  background-color: #94D3F0; //light blue
 
+  #asideNav {
+    // background-color: orange;
+    @include span-columns(2);
+    height: 1200px;
+    float: left;
+
+    #fixed {
+      position: fixed;
+      li {
+        line-height: 2em;
+      }
+    }
+  }
+ #containerWrapper { 
+   @include span-columns(10);
+   background-color: green;
+   float: left;
 
   #container1 {
+    background-color: pink;
+    // margin: 20px 0;
+    // padding: 20px 0;
+
 
 //------------------------------------------
     #logoRow1 {
+      background-color: grey;
+      padding: 2%;
+      overflow: hidden;
+     
 
       #logo {
+        width: 25%;
+        padding: 2%;
+        float: left;
+        background-color: blue;
+        } //end of logo
 
-      } //end of logp
 
       #socialMedia {
-        width: 20%;
+        width: 35%;
         float: right;
         padding-left: 4%;
         margin-top: 10px;
-
+        background-color: red;
+    
         ul{
           padding-left: 0;
         }
 
         li{
              display: inline-block;
-        }
+          }
+         #fb{
+             content: "";
+             background: url('../images/social_sprite.png') no-repeat -1px -3px;
+             background-size: 100px 100px;
+             width: 44px;
+             height: 43px;
+           }
+         #twitter{
+              content: "";
+              background: url('../images/social_sprite.png') no-repeat -47px -2px;
+              background-size: 100px 100px;
+              width: 44px;
+              height: 44px;
 
-           #fb{
-               content: "";
-               background: url('../images/social_sprite.png') no-repeat -1px -3px;
-               background-size: 100px 100px;
-               width: 44px;
-               height: 43px;
-          }
-           #twitter{
-                background: url('../images/social_sprite.png') no-repeat -47px -2px;
-                background-size: 100px 100px;
-                width: 44px;
-                height: 44px;
-          }
-           #insta{
-                background: url('../images/social_sprite.png') no-repeat -1px -49px;
-                background-size: 100px 100px;
-                width: 44px;
-                height: 43px;
-          }
-        } //end of socialMedia
+         }
+         #insta{
+              content: "";
+              background: url('../images/social_sprite.png') no-repeat -1px -49px;
+              background-size: 100px 100px;
+              width: 44px;
+              height: 43px;
+         }
+
+      } //end of socialMedia
+
 
     } //end of logoRow1
 
 //------------------------------------------    
 
     #imgRow2 {
-      
+      background-color: yellow;
+      padding: 2%;
       
 
     } //end of imgRow2
@@ -63,16 +120,25 @@
 
 
     #updateInfoRow3 {
+      background-color: purple;
       
+
       .glance {
+        background-color: #76C63D; //light green
+        width: 31%;
+        overflow: hidden;
+        float: left;
+        margin: 0 2% 0 0;
+        padding: 2%;
 
       
         #latestNews {
-
+          
         } //end of latestNews
 
         #todaySpecial {
-
+          
+          
           }//end of todaySpeacial
 
          #map {
@@ -89,21 +155,44 @@
   } //end of container1
 
   #container2 {
+    clear: both;
+    background-color: red;
+    // margin: 20px 0;
+    // padding: 20px 0;
+    overflow: hidden;
+   
 
     #dynamicContent{
+      background-color: orange;
+      width: 70%;
+      height: 1200px;
+      float: left;
+
 
       } //end of dynamicContent
-
+    #foodPhotosContainer {
+      background-color: blue;
+      float: right;
+      width: 23%;
+    
+    }
      .foodPhotos {
+      height: 200px;
+      background-color: grey;
+      margin: 0 0 20px 0;
 
      } //end of foodPhotes
-
+  
   } //end of container2
+  footer {
+    clear: both;
+    width: 100%;
+    background-color: yellow;
+    height: 100px;
+  } //end of footer
+
+ } //end of containerWrapper 
 
 
 
 } //end of mainPage
-
-footer {
-    
-  } //end of footer
