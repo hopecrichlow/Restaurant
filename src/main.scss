@@ -1,5 +1,10 @@
 @import'bourbon/bourbon';
 @import'neat/neat';
+
+//Variables
+$mainBackgroundColor: #FFFFFF;
+$dividingBorder: 2px solid #D0D0D0;
+$mainBorder: 1px solid #B3B3B3;
  
 body {
   font-family: serif;
@@ -170,32 +175,38 @@ img {
    
 
     #dynamicContent{
+      @include span-columns(8);
+      @include omega();
       background-color: orange;
-      width: 70%;
       height: 1200px;
       float: left;
 
 
       } //end of dynamicContent
     #foodPhotosContainer {
-      background-color: blue;
+      @include span-columns(4);
+      @include omega();
+      background-color: $mainBackgroundColor;
       float: right;
-      width: 23%;
-    
     }
      .foodPhotos {
-      height: 200px;
-      background-color: grey;
-      margin: 0 0 20px 0;
-
+      @include span-columns(4 of 4);
+      @include omega(1n);
+      border: $mainBorder;
+      height: 280px;
+      background-color: #F7F7F7;
+      margin: 0 0 40px 0;
      } //end of foodPhotes
   
   } //end of container2
   footer {
     clear: both;
+    background-color: $mainBackgroundColor;
+    border-top: $dividingBorder;
+    padding-top: 25px;
     width: 100%;
-    background-color: yellow;
-    height: 100px;
+    height: 90px;
+    font-size: 1em;
   } //end of footer
 
  } //end of containerWrapper 
@@ -203,4 +214,3 @@ img {
 
 
 } //end of mainPage
-
