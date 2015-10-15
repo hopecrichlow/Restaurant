@@ -31,3 +31,6 @@ html {
     background-size: 100px 100px;
     width: 44px;
     height: 43px; }
+
+#mainPage #container1 #imgRow2 {
+  background-size: cover; }
