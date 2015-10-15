@@ -2,6 +2,7 @@
 
 (function () {
 
+<<<<<<< HEAD
   console.log('It Works!');
 
   $(document).ready(function () {
@@ -16,4 +17,16 @@
       $("#" + tab_id).addClass('open');
     });
   });
+=======
+  
+
+
+
+
+
+
+
+
+
+>>>>>>> 9331e085ee00827edaccbf1b89cced6113c4684f
 })();

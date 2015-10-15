@@ -96,8 +96,12 @@ img {
             width: 44px;
             height: 43px; }
       #mainPage #containerWrapper #container1 #imgRow2 {
-        background-color: yellow;
-        padding: 2%; }
+        height: 350px;
+        width: 100%;
+        margin-bottom: 10px; }
+        #mainPage #containerWrapper #container1 #imgRow2 img {
+          width: 1200px;
+          height: 350px; }
       #mainPage #containerWrapper #container1 #updateInfoRow3 {
         background-color: purple; }
         #mainPage #containerWrapper #container1 #updateInfoRow3 .glance {
