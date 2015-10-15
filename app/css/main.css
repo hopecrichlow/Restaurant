@@ -35,14 +35,8 @@ img {
     content: "";
     display: table; }
   #mainPage #asideNav {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 14.70196%;
     height: 1200px;
     float: left; }
-    #mainPage #asideNav:last-child {
-      margin-right: 0; }
     #mainPage #asideNav #fixed {
       position: fixed; }
       #mainPage #asideNav #fixed li {
@@ -51,7 +45,7 @@ img {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 82.94039%;
+    width: 100%;
     background-color: green;
     float: left; }
     #mainPage #containerWrapper:last-child {
