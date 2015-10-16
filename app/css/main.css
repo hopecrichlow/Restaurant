@@ -104,8 +104,6 @@ img {
           height: 0;
           border-top: 1px solid rgba(0, 0, 0, 0.1); }
         #mainPage #containerWrapper #container1 #updateInfoRow3 #latestNews {
-          padding-left: 0;
-          border: 0.2em solid black;
           color: #828282; }
         #mainPage #containerWrapper #container1 #updateInfoRow3 .glance {
           float: left;
@@ -121,24 +119,28 @@ img {
             width: 100%; }
           #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #nh1 {
             float: left;
-            padding: 0;
             margin: 0;
-            margin-right: 30px; }
+            margin-right: 100px;
+            margin-bottom: 10px; }
           #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #nh2 {
-            padding-right: 2%;
             margin: 0;
-            float: right; }
+            float: right;
+            margin-left: 40px;
+            margin-bottom: 10px; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance p {
+            padding-left: 1%;
+            margin-top: 10px; }
           #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #todaySpecial {
             margin-right: 0; }
           #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map .glance {
             overflow: hidden; }
             #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map .glance .embed {
-              border: 1px solid black;
-              margin-top: 10px; }
+              margin: 20px; }
       #mainPage #containerWrapper #container1 #address {
-        margin: 0 5px;
+        margin: 0 20px;
         font-weight: normal; }
       #mainPage #containerWrapper #container1 #num-map {
+        margin-left: 20px;
         font-weight: normal; }
     #mainPage #containerWrapper #container2 {
       clear: both;

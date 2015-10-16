@@ -146,9 +146,9 @@ img {
           }
       
         #latestNews {
-          padding-left:0;
+        
           //display: inline-block;
-          border : 0.2em solid black;
+          // border : 0.2em solid black;
           color: #828282;
            } //end of latestNews
 
@@ -161,22 +161,30 @@ img {
 
           #content{
             width:100%;
+            //margin-bottom: 30px;
           }
 
           #nh1{
           //display:inline-block;
             float:left;
-            padding:0;
+            //padding-left:2%;
             margin:0;
-            margin-right: 30px;
+            margin-right: 100px;
+            margin-bottom:10px;
           }
           #nh2{
-            padding-right:2%;
+            //padding-right:2%;
             margin:0;
             // display: inline-block;
             float:right;
+            margin-left:40px;
+            margin-bottom:10px;
           }
 
+          p{
+            padding-left:1%;
+            margin-top: 10px;
+          }
 
         #todaySpecial {
           @include omega();
@@ -186,8 +194,10 @@ img {
           overflow: hidden;
 
               .embed{
-                border: 1px solid black;
-                margin-top:10px;
+                //border: 1px solid black;
+                margin: 20px;
+
+                
               } //end of embed
          } //end of map
           
@@ -198,12 +208,13 @@ img {
     } //end of Row3
 
     #address{
-                margin: 0 5px;
+                margin: 0 20px;
               font-weight:normal;
 
               } // end of  address id
 
               #num-map{
+                 margin-left:20px;
                 font-weight:normal;
               }
 
@@ -215,8 +226,6 @@ img {
   #container2 {
     clear: both;
     background-color: $mainBackgroundColor;
-    // margin: 20px 0;
-    // padding: 20px 0;
     overflow: hidden;
    
 
