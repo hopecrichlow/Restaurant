@@ -52,7 +52,6 @@ img {
     display: block;
     margin-right: 2.35765%;
     width: 82.94039%;
-    background-color: green;
     float: left; }
     #mainPage #containerWrapper:last-child {
       margin-right: 0; }
@@ -102,15 +101,41 @@ img {
         #mainPage #containerWrapper #container1 #imgRow2 img {
           width: 1200px;
           height: 350px; }
-      #mainPage #containerWrapper #container1 #updateInfoRow3 {
-        background-color: purple; }
-        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance {
-          background-color: #76C63D;
-          width: 31%;
-          overflow: hidden;
-          float: left;
-          margin: 0 2% 0 0;
-          padding: 2%; }
+      #mainPage #containerWrapper #container1 #updateInfoRow3 .glance {
+        background-color: #C2C2C2;
+        width: 31%;
+        overflow: hidden;
+        float: left;
+        margin: 0 2% 0 0;
+        padding: 1%;
+        font-style: normal;
+        font-size: 1.2em; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance hr {
+          color: black; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #latestNews {
+          padding-left: 0;
+          display: inline-block;
+          border: 0.2em solid black;
+          color: black; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #latestNews .nh1 {
+            display: inline-block;
+            padding: 0;
+            margin: 0; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #latestNews .nh2 {
+            text-align: right;
+            padding: 0;
+            margin: 0;
+            float: right; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map {
+          overflow: hidden; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map .embed {
+            border: 1px solid black;
+            margin-left: 10%; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map .info {
+            font-size: 1em;
+            font-weight: normal; }
+            #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map .info #get-in-line {
+              display: inline-block; }
     #mainPage #containerWrapper #container2 {
       clear: both;
       background-color: red;

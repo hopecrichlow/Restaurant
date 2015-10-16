@@ -46,7 +46,7 @@ img {
   }
  #containerWrapper { 
    @include span-columns(10);
-   background-color: green;
+   //background-color: green;
    float: left;
 
   #container1 {
@@ -130,22 +130,46 @@ img {
 
 //------------------------------------------
 
-
     #updateInfoRow3 {
-      background-color: purple;
+      //background-color: purple;
       
 
       .glance {
-        background-color: #76C63D; //light green
+        //background-color: #76C63D; //light green
+        background-color : #C2C2C2;
         width: 31%;
         overflow: hidden;
         float: left;
         margin: 0 2% 0 0;
-        padding: 2%;
+        padding: 1%;
+        font-style: normal;
+        font-size: 1.2em;
 
+
+          hr{
+              color: black;
+          }
       
         #latestNews {
-          
+          padding-left:0;
+          display: inline-block;
+          border : 0.2em solid black;
+          color: black;
+
+          .nh1{
+          display:inline-block;
+            padding:0;
+            margin:0;
+            ;
+          }
+          .nh2{
+            text-align: right;
+            padding:0;
+            margin:0;
+            float: right;
+          }
+
+
         } //end of latestNews
 
         #todaySpecial {
@@ -154,7 +178,21 @@ img {
           }//end of todaySpeacial
 
          #map {
+          overflow: hidden;
 
+          .embed{
+            border: 1px solid black;
+            margin-left:10%;
+          } //end of embed
+
+          .info{
+           font-size: 1em;
+            font-weight: normal;
+
+            #get-in-line{
+                  display:inline-block;
+            }
+          } // end of info div
          } //end of map
 
        } //end of .glance
