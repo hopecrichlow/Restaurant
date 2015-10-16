@@ -24,18 +24,33 @@ ul, li {
 img {
   max-width: 100%; }
 
+#asideNav {
+  float: left; }
+  #asideNav #fixed li {
+    font-size: 1.8em; }
+
+@media screen and (max-width: 1435px) {
+  #asideNav {
+    float: none;
+    font-size: 1.6em; }
+    #asideNav ul {
+      margin: auto;
+      text-align: center; }
+      #asideNav ul li {
+        display: inline-block;
+        padding: 0 1em;
+        font-size: 2.4em; } }
+
 #mainPage {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
-  background-color: #94D3F0; }
+  background-color: #FFFFFF; }
   #mainPage::after {
     clear: both;
     content: "";
     display: table; }
-  #mainPage #asideNav {
-    float: left; }
   #mainPage #containerWrapper {
     float: left;
     display: block;

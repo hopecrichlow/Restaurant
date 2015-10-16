@@ -27,7 +27,7 @@
 
 // var templateFunction = _.template(templateString);
 
-// let url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=34feffaacaaae2381e9612ed289f9683&tags=expensive+food&format=json&nojsoncallback=1';
+// let url = 'https://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=34feffaacaaae2381e9612ed289f9683&user_id=[your user id here]&format=json&nojsoncallback=1';
 
 // $.ajax({
 //   url: url,

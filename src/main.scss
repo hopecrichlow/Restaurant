@@ -24,22 +24,41 @@ ul, li{
 img {
   max-width: 100%;
 }
- 
-#mainPage {
-  @include outer-container;
-  max-width: 1200px;
-  background-color: #94D3F0; //light blue
+#asideNav {
+  float: left;
 
-  #asideNav {
-    float: left;
-
-    #fixed {
+  #fixed {
       
-      li {
-        
+    li {
+      font-size: 1.8em;
+      a {
       }
     }
   }
+}
+
+@media screen and (max-width:1435px) {
+  #asideNav {
+    float: none;
+    font-size: 1.6em;
+    ul {
+      margin: auto;
+      text-align: center;
+      li {
+      display: inline-block;
+      padding: 0 1em;
+      font-size: 2.4em;
+      }
+    }
+  }
+}
+
+#mainPage {
+  @include outer-container;
+  max-width: 1200px;
+  background-color: $mainBackgroundColor;
+
+
  #containerWrapper { 
    @include span-columns(12);
    background-color: green;
