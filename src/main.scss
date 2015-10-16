@@ -5,12 +5,11 @@
 $mainBackgroundColor: #FFFFFF;
 $dividingBorder: 2px solid #D0D0D0;
 $mainBorder: 1px solid #B3B3B3;
- 
+
 body {
   font-family: serif;
   position: relative;
   font-size: 62.5%;
-
 } 
 a { 
   text-decoration: none;
@@ -32,22 +31,24 @@ img {
   background-color: #94D3F0; //light blue
 
   #asideNav {
-    // background-color: orange;
-    @include span-columns(2);
-    height: 1200px;
     float: left;
 
     #fixed {
-      position: fixed;
+      
       li {
-        line-height: 2em;
+        
       }
     }
   }
  #containerWrapper { 
-   @include span-columns(10);
-   //background-color: green;
-   float: left;
+// <<<<<<< HEAD
+   @include span-columns(12);
+   background-color:$mainBackgroundColor;
+  // float: left;
+// =======
+//    @include span-columns(12);
+//    background-color: green;
+// >>>>>>> master
 
   #container1 {
     background-color: pink;
@@ -131,22 +132,10 @@ img {
 //------------------------------------------
 
     #updateInfoRow3 {
-      //background-color: purple;
-      
+        @include span-columns(12);
+        background-color: $mainBackgroundColor;
 
-      .glance {
-        //background-color: #76C63D; //light green
-        background-color : #C2C2C2;
-        width: 31%;
-        overflow: hidden;
-        float: left;
-        margin: 0 2% 0 0;
-        padding: 1%;
-        font-style: normal;
-        font-size: 1.2em;
-
-
-          /* Inset, by Dan Eden */
+    /* Inset, by Dan Eden */
 
         hr{
             border: 0;
@@ -161,7 +150,14 @@ img {
           //display: inline-block;
           border : 0.2em solid black;
           color: #828282;
-        } //end of latestNews
+           } //end of latestNews
+
+    
+      .glance {
+        @include span-columns(4 of 12);
+        border: $mainBorder;
+        background-color: #E1E1E1; //light green
+        padding: 2%;
 
           #content{
             width:100%;
@@ -183,31 +179,21 @@ img {
 
 
         #todaySpecial {
-          
-          
-          }//end of todaySpeacial
+          @include omega();
+                      }//end of todaySpeacial
 
          #map .glance { 
           overflow: hidden;
-
 
               .embed{
                 border: 1px solid black;
                 margin-top:10px;
               } //end of embed
-
-              // #address{
-              //   margin: 0 5px;
-              // font-weight:normal;
-
-              // } // end of  address id
-
-              // #num-map{
-              //   font-weight:normal;
-              // }
          } //end of map
-
-       } //end of .glance
+          
+        #map {
+        } //end of map
+      } //end of .glance
       
     } //end of Row3
 
@@ -228,21 +214,50 @@ img {
 
   #container2 {
     clear: both;
-    background-color: red;
+    background-color: $mainBackgroundColor;
     // margin: 20px 0;
     // padding: 20px 0;
     overflow: hidden;
    
 
-    #dynamicContent{
+
+    #dynamicContent {
       @include span-columns(8);
       @include omega();
+
       background-color: orange;
       height: 1200px;
       float: left;
 
+      .tabWrapper {
+        width: 100%;
+      
 
-      } //end of dynamicContent
+      .tabs li {
+        background: none;
+        background-color: pink;
+        display: inline-block;
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+
+      .tabs li.open {
+        background: white;
+       
+      }
+      .tabContent {
+        display: none;
+        background: white;
+        padding: 15px;
+      }
+
+      .tabContent.open {
+        display: block;
+      }
+      
+    } //end of tabWrapper
+
+  } //end of dynamicContent
     #foodPhotosContainer {
       @include span-columns(4);
       @include omega();

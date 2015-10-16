@@ -35,24 +35,13 @@ img {
     content: "";
     display: table; }
   #mainPage #asideNav {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 14.70196%;
-    height: 1200px;
     float: left; }
-    #mainPage #asideNav:last-child {
-      margin-right: 0; }
-    #mainPage #asideNav #fixed {
-      position: fixed; }
-      #mainPage #asideNav #fixed li {
-        line-height: 2em; }
   #mainPage #containerWrapper {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 82.94039%;
-    float: left; }
+    width: 100%;
+    background-color: #FFFFFF; }
     #mainPage #containerWrapper:last-child {
       margin-right: 0; }
     #mainPage #containerWrapper #container1 {
@@ -101,40 +90,51 @@ img {
         #mainPage #containerWrapper #container1 #imgRow2 img {
           width: 1200px;
           height: 350px; }
-      #mainPage #containerWrapper #container1 #updateInfoRow3 .glance {
-        background-color: #C2C2C2;
-        width: 31%;
-        overflow: hidden;
+      #mainPage #containerWrapper #container1 #updateInfoRow3 {
         float: left;
-        margin: 0 2% 0 0;
-        padding: 1%;
-        font-style: normal;
-        font-size: 1.2em;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        background-color: #FFFFFF;
         /* Inset, by Dan Eden */ }
-        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance hr {
+        #mainPage #containerWrapper #container1 #updateInfoRow3:last-child {
+          margin-right: 0; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 hr {
           border: 0;
           height: 0;
           border-top: 1px solid rgba(0, 0, 0, 0.1); }
-        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #latestNews {
+        #mainPage #containerWrapper #container1 #updateInfoRow3 #latestNews {
           padding-left: 0;
           border: 0.2em solid black;
           color: #828282; }
-        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #content {
-          width: 100%; }
-        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #nh1 {
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance {
           float: left;
-          padding: 0;
-          margin: 0;
-          margin-right: 30px; }
-        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #nh2 {
-          padding-right: 2%;
-          margin: 0;
-          float: right; }
-        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map .glance {
-          overflow: hidden; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map .glance .embed {
-            border: 1px solid black;
-            margin-top: 10px; }
+          display: block;
+          margin-right: 2.35765%;
+          width: 31.76157%;
+          border: 1px solid #B3B3B3;
+          background-color: #E1E1E1;
+          padding: 2%; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance:last-child {
+            margin-right: 0; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #content {
+            width: 100%; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #nh1 {
+            float: left;
+            padding: 0;
+            margin: 0;
+            margin-right: 30px; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #nh2 {
+            padding-right: 2%;
+            margin: 0;
+            float: right; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #todaySpecial {
+            margin-right: 0; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map .glance {
+            overflow: hidden; }
+            #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map .glance .embed {
+              border: 1px solid black;
+              margin-top: 10px; }
       #mainPage #containerWrapper #container1 #address {
         margin: 0 5px;
         font-weight: normal; }
@@ -142,7 +142,7 @@ img {
         font-weight: normal; }
     #mainPage #containerWrapper #container2 {
       clear: both;
-      background-color: red;
+      background-color: #FFFFFF;
       overflow: hidden; }
       #mainPage #containerWrapper #container2 #dynamicContent {
         float: left;
@@ -155,6 +155,22 @@ img {
         float: left; }
         #mainPage #containerWrapper #container2 #dynamicContent:last-child {
           margin-right: 0; }
+        #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper {
+          width: 100%; }
+          #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabs li {
+            background: none;
+            background-color: pink;
+            display: inline-block;
+            padding: 10px 15px;
+            cursor: pointer; }
+          #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabs li.open {
+            background: white; }
+          #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabContent {
+            display: none;
+            background: white;
+            padding: 15px; }
+          #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabContent.open {
+            display: block; }
       #mainPage #containerWrapper #container2 #foodPhotosContainer {
         float: left;
         display: block;

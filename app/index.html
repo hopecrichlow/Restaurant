@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html> 
-<head> 
+<head>  
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RESTAURANT</title>
 
@@ -8,10 +8,8 @@
   <link rel="stylesheet" href="css/main.css">
 </head>  
 <body> 
-<div id="mainPage">
-
 <!-- ...............................................     -->
-  <aside id="asideNav">
+<aside id="asideNav">
     <div id="fixed">
       <ul>
         <li><a href="#">Home</a></li>
@@ -22,9 +20,10 @@
         <li><a href="#">Hide</a></li>
       </ul>
     </div>
-  </aside>
-
+</aside>
 <!-- .............................................     -->
+<div id="mainPage">
+
  <div id="containerWrapper">
   <div id="container1">
 
@@ -74,7 +73,29 @@
 
   <div id="container2">
   <br>
-   <div id="dynamicContent"></div>
+   <div id="dynamicContent">
+
+    <div class="tabWrapper">
+     <ul class="tabs">
+      <li class="tabLink open" data-tab="tab1">Tab One</li>
+      <li class="tabLink" data-tab="tab2">Tab Two</li>
+      <li class="tabLink" data-tab="tab3">Tab Three</li>
+   </ul>
+
+        <div id="tab1" class="tabContent open">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et 
+      </div>
+      <div id="tab2" class="tabContent">
+         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+      </div>
+      <div id="tab3" class="tabContent">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+      </div>
+
+    </div> <!-- end of tabWrapper -->
+
+   </div> <!-- end of dynamicContent -->
+
    <div id="foodPhotosContainer">
      <div class="foodPhotos" id="foodPhoto01"></div>
      <div class="foodPhotos" id="foodPhoto01"></div>
