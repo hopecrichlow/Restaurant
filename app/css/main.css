@@ -112,7 +112,7 @@ img {
             margin-right: 0; }
     #mainPage #containerWrapper #container2 {
       clear: both;
-      background-color: red;
+      background-color: #FFFFFF;
       overflow: hidden; }
       #mainPage #containerWrapper #container2 #dynamicContent {
         float: left;
