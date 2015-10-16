@@ -127,7 +127,8 @@ img {
         #mainPage #containerWrapper #container2 #dynamicContent:last-child {
           margin-right: 0; }
         #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper {
-          width: 100%; }
+          width: 100%;
+          background-color: green; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabs li {
             background: none;
             background-color: pink;
@@ -142,6 +143,14 @@ img {
             padding: 15px; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabContent.open {
             display: block; }
+          #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form {
+            display: block; }
+            #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form label {
+              display: block; }
+              #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form label input {
+                display: block; }
+              #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form label button {
+                display: block; }
       #mainPage #containerWrapper #container2 #foodPhotosContainer {
         float: left;
         display: block;
@@ -175,3 +184,22 @@ img {
       width: 100%;
       height: 90px;
       font-size: 1em; }
+
+#enterTitle {
+  margin: 0 auto;
+  padding: 50px;
+  background-color: pink;
+  width: 40%; }
+
+#enterSlide {
+  background-color: yellow;
+  margin: 50px auto;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  padding: 10px; }
+
+#enterSlide > div {
+  position: absolute;
+  top: 10px;
+  left: 10px; }
