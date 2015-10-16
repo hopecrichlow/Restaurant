@@ -109,33 +109,37 @@ img {
         margin: 0 2% 0 0;
         padding: 1%;
         font-style: normal;
-        font-size: 1.2em; }
+        font-size: 1.2em;
+        /* Inset, by Dan Eden */ }
         #mainPage #containerWrapper #container1 #updateInfoRow3 .glance hr {
-          color: black; }
+          border: 0;
+          height: 0;
+          border-top: 1px solid rgba(0, 0, 0, 0.1); }
         #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #latestNews {
           padding-left: 0;
-          display: inline-block;
           border: 0.2em solid black;
-          color: black; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #latestNews .nh1 {
-            display: inline-block;
-            padding: 0;
-            margin: 0; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #latestNews .nh2 {
-            text-align: right;
-            padding: 0;
-            margin: 0;
-            float: right; }
-        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map {
+          color: #828282; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #content {
+          width: 100%; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #nh1 {
+          float: left;
+          padding: 0;
+          margin: 0;
+          margin-right: 30px; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #nh2 {
+          padding-right: 2%;
+          margin: 0;
+          float: right; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map .glance {
           overflow: hidden; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map .embed {
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map .glance .embed {
             border: 1px solid black;
-            margin-left: 10%; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map .info {
-            font-size: 1em;
-            font-weight: normal; }
-            #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map .info #get-in-line {
-              display: inline-block; }
+            margin-top: 10px; }
+      #mainPage #containerWrapper #container1 #address {
+        margin: 0 5px;
+        font-weight: normal; }
+      #mainPage #containerWrapper #container1 #num-map {
+        font-weight: normal; }
     #mainPage #containerWrapper #container2 {
       clear: both;
       background-color: red;

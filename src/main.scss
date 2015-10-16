@@ -146,58 +146,80 @@ img {
         font-size: 1.2em;
 
 
-          hr{
-              color: black;
+          /* Inset, by Dan Eden */
+
+        hr{
+            border: 0;
+            height: 0;
+            //border-color: 1px solid black;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            // border-bottom: 1px solid rgba(255, 255, 255, 0.3);
           }
       
         #latestNews {
           padding-left:0;
-          display: inline-block;
+          //display: inline-block;
           border : 0.2em solid black;
-          color: black;
-
-          .nh1{
-          display:inline-block;
-            padding:0;
-            margin:0;
-            ;
-          }
-          .nh2{
-            text-align: right;
-            padding:0;
-            margin:0;
-            float: right;
-          }
-
-
+          color: #828282;
         } //end of latestNews
+
+          #content{
+            width:100%;
+          }
+
+          #nh1{
+          //display:inline-block;
+            float:left;
+            padding:0;
+            margin:0;
+            margin-right: 30px;
+          }
+          #nh2{
+            padding-right:2%;
+            margin:0;
+            // display: inline-block;
+            float:right;
+          }
+
 
         #todaySpecial {
           
           
           }//end of todaySpeacial
 
-         #map {
+         #map .glance { 
           overflow: hidden;
 
-          .embed{
-            border: 1px solid black;
-            margin-left:10%;
-          } //end of embed
 
-          .info{
-           font-size: 1em;
-            font-weight: normal;
+              .embed{
+                border: 1px solid black;
+                margin-top:10px;
+              } //end of embed
 
-            #get-in-line{
-                  display:inline-block;
-            }
-          } // end of info div
+              // #address{
+              //   margin: 0 5px;
+              // font-weight:normal;
+
+              // } // end of  address id
+
+              // #num-map{
+              //   font-weight:normal;
+              // }
          } //end of map
 
        } //end of .glance
       
     } //end of Row3
+
+    #address{
+                margin: 0 5px;
+              font-weight:normal;
+
+              } // end of  address id
+
+              #num-map{
+                font-weight:normal;
+              }
 
 //------------------------------------------
 

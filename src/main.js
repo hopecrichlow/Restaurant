@@ -10,12 +10,14 @@ let newsPromise = $.getJSON(newsURL);
 newsPromise.then(function(newsobject){
 // ********TEMPLATE FOR NEWS*************
 var newsTemplate=`
-<h3 class='heading'> Latest News </h3>
+<h3 class='heading'> Latest News</h3>
 <hr>
 <div class="data1">
-<h3 class="nh1">${newsobject.title} </h3>
-<h3 class="nh2">${newsobject.date_published}</h3>
-<p> "${newsobject.post}" </p>
+  <div class="content">
+      <h3 id="nh1">${newsobject.title} </h3>
+      <h3  id="nh2">${newsobject.date_published}</h3>
+  </div>
+  <p> ${newsobject.post} </p>
 </div>`;
 $('#latestNews').append(newsTemplate);  // ***********APPEND to HTML
 });
