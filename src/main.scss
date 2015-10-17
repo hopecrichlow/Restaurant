@@ -26,12 +26,15 @@ img {
 }
 #asideNav {
   float: left;
+  position: fixed;
 
   #fixed {
       
     li {
-      font-size: 1.8em;
-      a {
+      padding: 0 0 1em 0;
+      font-size: 2.5em;
+      a:link {
+        color: black;
       }
     }
   }
@@ -40,18 +43,19 @@ img {
 @media screen and (max-width:1435px) {
   #asideNav {
     float: none;
-    font-size: 1.6em;
-    ul {
+    position: inherit;
+    font-size: 1.25em;
+    #fixed {
       margin: auto;
       text-align: center;
       li {
       display: inline-block;
-      padding: 0 1em;
-      font-size: 2.4em;
+      margin: 0 1em;
+      padding: 0;
       }
     }
   }
-}
+}//@media end (asideNav)
 
 #mainPage {
   @include outer-container;
@@ -61,7 +65,7 @@ img {
 
  #containerWrapper { 
    @include span-columns(12);
-   background-color: green;
+   background-color: $mainBackgroundColor;
 
   #container1 {
     background-color: pink;

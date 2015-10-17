@@ -25,21 +25,26 @@ img {
   max-width: 100%; }
 
 #asideNav {
-  float: left; }
+  float: left;
+  position: fixed; }
   #asideNav #fixed li {
-    font-size: 1.8em; }
+    padding: 0 0 1em 0;
+    font-size: 2.5em; }
+    #asideNav #fixed li a:link {
+      color: black; }
 
 @media screen and (max-width: 1435px) {
   #asideNav {
     float: none;
-    font-size: 1.6em; }
-    #asideNav ul {
+    position: inherit;
+    font-size: 1.25em; }
+    #asideNav #fixed {
       margin: auto;
       text-align: center; }
-      #asideNav ul li {
+      #asideNav #fixed li {
         display: inline-block;
-        padding: 0 1em;
-        font-size: 2.4em; } }
+        margin: 0 1em;
+        padding: 0; } }
 
 #mainPage {
   max-width: 68em;
@@ -56,7 +61,7 @@ img {
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    background-color: green; }
+    background-color: #FFFFFF; }
     #mainPage #containerWrapper:last-child {
       margin-right: 0; }
     #mainPage #containerWrapper #container1 {
