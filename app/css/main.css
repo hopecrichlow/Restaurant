@@ -113,16 +113,21 @@ img {
           width: 31.76157%;
           border: 1px solid #B3B3B3;
           background-color: #E1E1E1;
-          padding: 2%; }
+          padding-left: 2%;
+          padding-right: 2%; }
           #mainPage #containerWrapper #container1 #updateInfoRow3 .glance:last-child {
             margin-right: 0; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .heading {
+            padding-left: 3%;
+            font-size: 1.5em;
+            color: #535353; }
           #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #content {
             width: 100%; }
           #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #nh1 {
             display: inline-block;
             padding: 0;
             margin: 0;
-            padding-left: 2%;
+            padding-left: 3%;
             padding-bottom: 10px;
             margin-right: 120px; }
           #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #nh2 {
@@ -130,10 +135,20 @@ img {
             margin-left: 20px;
             display: inline-block; }
           #mainPage #containerWrapper #container1 #updateInfoRow3 .glance p {
-            padding-left: 2%;
+            padding-left: 3%;
             margin-top: 5px; }
           #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #todaySpecial {
             margin-right: 0; }
+            #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #todaySpecial .spec-img {
+              width: 70%;
+              height: 150px;
+              margin-left: 40px;
+              overflow: hidden; }
+            #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #todaySpecial .sp-img {
+              width: 100%;
+              height: 150px;
+              padding-left: 40px;
+              margin: 0 auto; }
           #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map .glance {
             overflow: hidden; }
             #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map .glance .embed {

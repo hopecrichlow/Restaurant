@@ -5,6 +5,7 @@
 $mainBackgroundColor: #FFFFFF;
 $dividingBorder: 2px solid #D0D0D0;
 $mainBorder: 1px solid #B3B3B3;
+$row3FontColor:#535353;
 
 body {
   font-family: serif;
@@ -155,18 +156,29 @@ img {
         @include span-columns(4 of 12);
         border: $mainBorder;
         background-color: #E1E1E1; //light green
-        padding: 2%;
+        padding-left: 2%;
+        padding-right:2%;
+
+
+          .heading{
+            padding-left:3%;
+            font-size:1.5em;
+            color:#535353;
+            
+          }
+
 
           #content{
             width:100%;
           }
+
 
           #nh1{
           display:inline-block;
             //float:left;
             padding:0;
             margin:0;
-            padding-left: 2%;
+            padding-left: 3%;
             padding-bottom: 10px;
             margin-right: 120px;
           }
@@ -178,13 +190,30 @@ img {
           }
 
           p{
-            padding-left: 2%;
+            padding-left: 3%;
             margin-top:5px;
           }
 
         #todaySpecial {
           @include omega();
-                      }//end of todaySpeacial
+          
+          .spec-img{
+            //display: inline-block;
+            width:70%;
+            height: 150px;
+            margin-left:40px;
+            overflow: hidden;
+          }
+
+        .sp-img{
+          // display: inline-block;
+         //margin-left:40px;
+          width: 100%;
+          height: 150px;
+          padding-left:40px;
+          margin:0 auto;
+          }
+ }//end of todaySpeacial
 
          #map .glance { 
           overflow: hidden;

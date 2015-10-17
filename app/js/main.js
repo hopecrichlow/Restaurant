@@ -14,29 +14,30 @@
     $('#latestNews').append(newsTemplate); // ***********APPEND to HTML
   });
 
-  // *********CREATING A PROMISE FOR SPECIAL
+  // *********CREATING A PROMISE FOR SPECIAL AND ONE FOR MENU
 
   var specialURL = "https://json-data.herokuapp.com/restaurant/special/1";
-  var specialPromise = $.getJSON(specialURL);
-  specialPromise.then(function (specialobject) {
-    // ********TEMPLATE FOR SPECIAL*************
-    var specialTemplate = "\n<h3 class='heading'> Todays Special </h3>\n<hr>\n<div class=\"data2\">\n<h3 class=\"item_id\">" + specialobject.menu_item_id + "</h3>\n\n</div>";
-    $('#todaySpecial').append(specialTemplate); // ***********APPEND to HTML
-  });
-  // <p> "${specialobject.post}" </p> (need to access info from fancymenu)
+  var menuURL = "https://json-data.herokuapp.com/restaurant/menu/1";
 
-  // // PROMISE FOR MAP
-  // let newsURL ="https://json-data.herokuapp.com/restaurant/news/1";
-  // let newsPromise = $.getJSON(newsURL);
-  // newsPromise.then(function(newsobject){
-  // // ********TEMPLATE FOR NEWS*************
-  // var newsTemplate=`
-  // <h3 class='heading'> Latest News </h3>
-  // <div class="data1">
-  // <h3>"${newsobject.title}"  "${newsobject.date_published}"</h3>
-  // <p> "${newsobject.post}" </p>
+  // creating objects to get informations from the url
+  var menuPromise = $.getJSON(menuURL);
+  var specialPromise = $.getJSON(specialURL);
+
+  console.log(menuPromise);
+  console.log(specialPromise);
+
+  // specialPromise.then(function(specialobject){
+  // // ********TEMPLATE FOR SPECIAL*************
+  // var specialTemplate=`
+  // <div class="data2">
+  // <h3 class="item_id">${specialobject.menu_item_id}</h3>
+
   // </div>`;
-  // $('#latestNews').append(newsTemplate);  // ***********APPEND to HTML
+  // $('#todaySpecial').append(specialTemplate);  // ***********APPEND to HTML
+  // });
+  // //<p> "${specialobject.post}" </p> (need to access info from fancymenu)
+
+  // ****************************************************
 
   //tabbed content
   $(document).ready(function () {
