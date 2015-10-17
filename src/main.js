@@ -7,6 +7,8 @@
 let newsURL ="https://json-data.herokuapp.com/restaurant/news/1";
 let newsPromise = $.getJSON(newsURL);
 newsPromise.then(function(newsobject){
+  // console.log(newsobject);
+
 // ********TEMPLATE FOR NEWS*************
 var newsTemplate=`
 <h3 class='heading'> Latest News</h3>
@@ -21,29 +23,47 @@ var newsTemplate=`
 $('#latestNews').append(newsTemplate);  // ***********APPEND to HTML
 });
 
+
 // *********CREATING A PROMISE FOR SPECIAL AND ONE FOR MENU
 
 let specialURL ="https://json-data.herokuapp.com/restaurant/special/1";
 let menuURL = "https://json-data.herokuapp.com/restaurant/menu/1";
 
 // creating objects to get informations from the url
-let menuPromise= $.getJSON(menuURL);
-let specialPromise = $.getJSON(specialURL);
+let menuObj, specialObj;
+let menuArr, tempArr;
+let special_ID;
 
-console.log(menuPromise);
-console.log(specialPromise);
+// *******************CAPTURING DYNAMIC VALUES OF ID FROM THE URLS***********
+let specialPromise = $.getJSON(specialURL).then(function(specialObj){
+  special_ID = specialObj.menu_item_id;
+  //console.log('special info', special_ID);
+});
 
 
-// specialPromise.then(function(specialobject){
-// // ********TEMPLATE FOR SPECIAL*************
-// var specialTemplate=`
-// <div class="data2">
-// <h3 class="item_id">${specialobject.menu_item_id}</h3>
+let menuPromise= $.getJSON(menuURL).then( function (menuObj){
+  //console.log(menuObj);
+  var temp = menuObj.entrees;      
+  //console.log('info of temp',temp); //****[returned array of objects]
+for (var i=0;i<temp.length; i++){
+  //console.log(temp[i].id);
+  // var my_ids= temp[i].id +" " +temp[i].item;
+  // console.log(my_ids);
 
-// </div>`;
-// $('#todaySpecial').append(specialTemplate);  // ***********APPEND to HTML
-// });
-// //<p> "${specialobject.post}" </p> (need to access info from fancymenu)
+   if (special_ID === temp[i].id){
+     // console.log(temp[i].item);
+    // // ********TEMPLATE FOR SPECIAL*************
+       var specialTemplate=`
+      <div class="data2">
+      <h3 id="item_id1">${temp[i].item}</h3>
+      <h3 id="item_id2">${temp[i].id}</h3>
+      </div>`;
+
+      $('#todaySpecial').append(specialTemplate);  // ***********APPEND to HTML
+    }
+}
+
+});
 
 
 // ****************************************************

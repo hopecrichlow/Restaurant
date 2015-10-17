@@ -175,7 +175,6 @@ img {
 
           #nh1{
           display:inline-block;
-            //float:left;
             padding:0;
             margin:0;
             padding-left: 3%;
@@ -186,7 +185,6 @@ img {
             padding-right:2%;
             margin-left:20px;
             display: inline-block;
-            //float:right;
           }
 
           p{
@@ -214,6 +212,31 @@ img {
           margin:0 auto;
           }
  }//end of todaySpeacial
+ .data2{
+  width:100%;
+
+}
+
+ #item_Id1{
+    display: inline-block;
+    float: left;
+    width:65%;
+    padding:0;
+    margin:0;
+    padding-left: 3%;
+    box-sizing:border-box;
+    // padding-bottom: 10px;
+
+ }
+ #item_Id2{
+  //display: inline-block;
+  box-sizing:border-box;
+  float: right;
+  margin-right: 0;
+  padding-left: 80px;
+    //display: inline-block;
+ }
+  
 
          #map .glance { 
           overflow: hidden;

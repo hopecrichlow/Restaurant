@@ -9,6 +9,8 @@
   var newsURL = "https://json-data.herokuapp.com/restaurant/news/1";
   var newsPromise = $.getJSON(newsURL);
   newsPromise.then(function (newsobject) {
+    // console.log(newsobject);
+
     // ********TEMPLATE FOR NEWS*************
     var newsTemplate = "\n<h3 class='heading'> Latest News</h3>\n<hr>\n<div class=\"data1\">\n  <div class=\"content\">\n      <h3 id=\"nh1\">" + newsobject.title + " </h3>\n      <h3  id=\"nh2\">" + newsobject.date_published + "</h3>\n  </div>\n  <p> " + newsobject.post + " </p>\n</div>";
     $('#latestNews').append(newsTemplate); // ***********APPEND to HTML
@@ -20,22 +22,36 @@
   var menuURL = "https://json-data.herokuapp.com/restaurant/menu/1";
 
   // creating objects to get informations from the url
-  var menuPromise = $.getJSON(menuURL);
-  var specialPromise = $.getJSON(specialURL);
+  var menuObj = undefined,
+      specialObj = undefined;
+  var menuArr = undefined,
+      tempArr = undefined;
+  var special_ID = undefined;
 
-  console.log(menuPromise);
-  console.log(specialPromise);
+  // *******************CAPTURING DYNAMIC VALUES OF ID FROM THE URLS***********
+  var specialPromise = $.getJSON(specialURL).then(function (specialObj) {
+    special_ID = specialObj.menu_item_id;
+    //console.log('special info', special_ID);
+  });
 
-  // specialPromise.then(function(specialobject){
-  // // ********TEMPLATE FOR SPECIAL*************
-  // var specialTemplate=`
-  // <div class="data2">
-  // <h3 class="item_id">${specialobject.menu_item_id}</h3>
+  var menuPromise = $.getJSON(menuURL).then(function (menuObj) {
+    //console.log(menuObj);
+    var temp = menuObj.entrees;
+    //console.log('info of temp',temp); //****[returned array of objects]
+    for (var i = 0; i < temp.length; i++) {
+      //console.log(temp[i].id);
+      // var my_ids= temp[i].id +" " +temp[i].item;
+      // console.log(my_ids);
 
-  // </div>`;
-  // $('#todaySpecial').append(specialTemplate);  // ***********APPEND to HTML
-  // });
-  // //<p> "${specialobject.post}" </p> (need to access info from fancymenu)
+      if (special_ID === temp[i].id) {
+        // console.log(temp[i].item);
+        // // ********TEMPLATE FOR SPECIAL*************
+        var specialTemplate = "\n      <div class=\"data2\">\n      <h3 id=\"item_id1\">" + temp[i].item + "</h3>\n      <h3 id=\"item_id2\">" + temp[i].id + "</h3>\n      </div>";
+
+        $('#todaySpecial').append(specialTemplate); // ***********APPEND to HTML
+      }
+    }
+  });
 
   // ****************************************************
 
