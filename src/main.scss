@@ -278,15 +278,20 @@ img {
 
 
 .slideImage { 
-  // width: 400px;
-  // height: 400px;
+ 
   margin: 0 auto;
   background-color: pink;
+
  
     img {
       position: absolute; 
+      left: 20%;
       width: 60%;
       height: 400px;
+    }
+    #firstImage {
+      width: 20%;
+      
     }
   } //end of slide Image 
 

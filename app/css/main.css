@@ -203,5 +203,8 @@ img {
     background-color: pink; }
     #enterSlide .slideImage img {
       position: absolute;
+      left: 20%;
       width: 60%;
       height: 400px; }
+    #enterSlide .slideImage #firstImage {
+      width: 20%; }

@@ -56,9 +56,12 @@
     }); //end of _.each()
   }; //end of photoFilter function
   //slideshow
+
+  // $("#enterSlide div:gt(0)").hide();
   $("#enterSlide div:gt(0)").hide();
 
   setInterval(function () {
+
     $('#enterSlide div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('#enterSlide');
   }, 3000);
   //end of slideshow
