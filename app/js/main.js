@@ -1,5 +1,7 @@
 'use strict';
 
+(function () {})();
+
 (function () {
   //tabbed content
   $(document).ready(function () {
@@ -24,36 +26,35 @@
   var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=365dccc5a182acbc32b9f3b607f26f73&tags=expensive+food&format=json&nojsoncallback=1";
   //AJAX Call
   var promise = $.getJSON(url);
-  // var flickrURL = "http:farm"+data.photos.photo[i].farm+".static.flickr.com/"+data.photos.photo[i].server+"/"+data.photos.photo[i].id+"_"+data.photos.photo[i].secret+".jpg"
   //------------------------------------
   promise.then(function (photos) {
-    photoFilter(photos);
+    photoFilter(photos); //send the JSON object to my photoFilter function
+    console.dir(photos); //look at the JSON object
   });
   //end of AJAX Call
   //------------------------------------
   // function for storing and manipulating the flickr object
+  // use this for LANDING PAGE
   var photoFilter = function photoFilter(obj) {
-    console.log(obj);
-    // console.log(obj.photos.photo[0].id);
+    //set a variable for using in the flickrURL
+    var images = obj.photos.photo;
+    // check what images is equal to (array of many objects)
+    // console.log(images);
 
-    _.each(obj, function (item) {
-      // console.log(item.photo);
-      _.each(item, function (array) {
-        console.log(array);
-      });
-    });
-  }; // end of photoFilter
-  //Template for inserting a DIV and Images to the HTML
-  // var imageInput = function(obj) {
-  //  var template = `
-  //   <div >
-  //      <img src="${}">
-  //    </div>  `
-  //  }
-
-  // Maxes HINT
-  // var photoUrl = "www.flickr.com/${obj.secret}"
-
+    //iterate of each
+    _.each(images, function (image) {
+      //look at each object in the array
+      // console.dir(image);
+      //build a URL according to the API manual
+      var flickrURL = "http://farm" + image.farm + ".static.flickr.com/" + image.server + "/" + image.id + "_" + image.secret + ".jpg";
+      //build a TEMPLATE to insert into the HTML
+      var slideshow = '\n    <div class="slideImage">\n    <img src="' + flickrURL + '" />\n    </div>';
+      console.dir(slideshow);
+      $('#enterSlide').append(slideshow);
+      $(".slideImage").hide();
+      // $('#slideTest').append(slideshow);
+    }); //end of _.each()
+  }; //end of photoFilter function
   //slideshow
   $("#enterSlide div:gt(0)").hide();
 
@@ -62,6 +63,7 @@
   }, 3000);
   //end of slideshow
 })();
+//-----------------------------------------
 
 // Group Project
 // Key:
