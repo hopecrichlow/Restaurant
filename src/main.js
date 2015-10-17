@@ -24,7 +24,7 @@
  // LicenseURL: "https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo&api_key=cd9871ce6a78cb3e9d4a625e7f7e70c4&format=json&nojsoncallback=1&auth_token=72157659473943268-c7d1bff06042a246&api_sig=9f30153bc5371c42dfe2ba4359865ff2"; 
 
 //flickr API
-var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=365dccc5a182acbc32b9f3b607f26f73&tags=expensive+food&format=json&nojsoncallback=1";
+var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=365dccc5a182acbc32b9f3b607f26f73&tags=food+gourmet&format=json&nojsoncallback=1";
 //AJAX Call
 var promise = $.getJSON(url);
 //------------------------------------
@@ -53,14 +53,10 @@ var photoFilter = function(obj){
     <div class="slideImage">
     <img src="${ flickrURL }" />
     </div>`;
-    console.dir(slideshow);
+    // console.dir(slideshow);
     $('#enterSlide').append(slideshow);
     $(".slideImage").hide();
     // $('#slideTest').append(slideshow);
-
-
-    
-
     });//end of _.each()
 }; //end of photoFilter function
  //slideshow 
@@ -68,8 +64,6 @@ var photoFilter = function(obj){
  // $("#enterSlide div:gt(0)").hide();
  $("#enterSlide div:gt(0)").hide();
  
-
-
 setInterval(function() { 
   
   $('#enterSlide div:first')
@@ -83,7 +77,32 @@ setInterval(function() {
 
 }());
 //-----------------------------------------
+(function(){
+// get 4-6 photos from flickr to use for the right hand photos  
+// get the URL for flickr 
+var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=365dccc5a182acbc32b9f3b607f26f73&tags=food&format=json&nojsoncallback=1";
+//AJAX Call
+var promise = $.getJSON(url);
+// //------------------------------------
+  promise.then (function(obj) {
 
+    var images = _.first(obj.photos.photo, [4]);
+
+     _.each(images, function(image){
+      console.log(image);
+//build a URL according to the API manual
+       var flickrURL = "http://farm"+image.farm+".static.flickr.com/"+image.server+"/"+image.id+"_"+image.secret+".jpg";
+//build a TEMPLATE to insert into the HTML
+    var foodPhoto = `
+    <div class="foodPhotos">
+    <img src="${ flickrURL }" />
+    </div>`;
+    // console.dir(slideshow);
+    $('#foodPhotosContainer').append(foodPhoto);
+    }); //end of _.each
+  }); //end of AJAX Call 
+
+})();
 
 
 // Group Project
