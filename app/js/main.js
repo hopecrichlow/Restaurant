@@ -13,7 +13,11 @@
     console.log(newsobject);
 
     // ********TEMPLATE FOR NEWS*************
+<<<<<<< HEAD
     var newsTemplate = "\n<h3 class='heading'> Latest News</h3>\n<hr>\n<div class=\"data1\">\n  <div class=\"content\"> \n      <h3 id=\"nh1\">" + newsobject.title + " </h3>\n      <h3  id=\"nh2\">" + newsobject.date_published + "</h3>\n  </div>\n  <p> " + newsobject.post + " </p>\n</div>";
+=======
+    var newsTemplate = "\n<h3 class='heading'> Latest News</h3>\n<hr>\n<div class=\"data1\">\n  <div class=\"content\">\n      <h3 id=\"nh1\">" + newsobject.title + " </h3>\n      <h3  id=\"nh2\">" + newsobject.date_published + "</h3>\n  </div> //end of content\n  <div id=\"post\"><p> " + newsobject.post + " </p></div>\n</div>";
+>>>>>>> 1ea1c5d8af89cc0382e35058a9b6310fd6e07688
     $('#latestNews').append(newsTemplate); // ***********APPEND to HTML
   });
 })(); //end of IIFE01

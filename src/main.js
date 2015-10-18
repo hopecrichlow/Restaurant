@@ -18,8 +18,8 @@ var newsTemplate=`
   <div class="content"> 
       <h3 id="nh1">${newsobject.title} </h3>
       <h3  id="nh2">${newsobject.date_published}</h3>
-  </div>
-  <p> ${newsobject.post} </p>
+  </div> //end of content
+  <div id="post"><p> ${newsobject.post} </p></div>
 </div>`;
 $('#latestNews').append(newsTemplate);  // ***********APPEND to HTML
   });
@@ -114,7 +114,6 @@ for (var i=0;i<temp.length; i++){
 })//end of .ready function
 //end of tabbed content  
 })(); //end of IIFE03
-
 
 (function(){//IFFE04
 
