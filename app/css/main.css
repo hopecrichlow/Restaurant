@@ -67,22 +67,27 @@ img {
     #mainPage #containerWrapper:last-child {
       margin-right: 0; }
     #mainPage #containerWrapper #container1 #logoRow1 {
-      background-color: grey;
       padding: 2%;
-      overflow: hidden; }
+      overflow: hidden;
+      height: 117px; }
       #mainPage #containerWrapper #container1 #logoRow1 #logo {
-        width: 25%;
-        padding: 2%;
         float: left; }
+        #mainPage #containerWrapper #container1 #logoRow1 #logo img {
+          max-width: 100%;
+          height: 115px;
+          float: left;
+          padding-left: 5%; }
       #mainPage #containerWrapper #container1 #logoRow1 #socialMedia {
         width: 35%;
         float: right;
         padding-left: 4%;
+        padding-top: 20px;
         margin-top: 10px; }
         #mainPage #containerWrapper #container1 #logoRow1 #socialMedia ul {
           padding-left: 0; }
         #mainPage #containerWrapper #container1 #logoRow1 #socialMedia li {
-          display: inline-block; }
+          display: inline-block;
+          margin-right: 10%; }
         #mainPage #containerWrapper #container1 #logoRow1 #socialMedia #fb {
           content: "";
           background: url("../images/social_sprite.png") no-repeat -1px -3px;
