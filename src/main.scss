@@ -136,7 +136,7 @@ img {
             // border-bottom: 1px solid rgba(255, 255, 255, 0.3);
           }
       
-        #latestNews {
+        #latestNews{
           padding-left:0;
           color: #828282;
            } //end of latestNews
@@ -145,24 +145,30 @@ img {
       .glance {
         @include span-columns(4 of 12);
         border: $mainBorder;
+        color:$row3FontColor;
         background-color: #E1E1E1; 
         padding-left: 2%;
         padding-right:2%;
         height: 250px;
         overflow: hidden;
+        display: inline-block;
+
 
 
           .heading{
             padding-left:3%;
             font-size:1.5em;
             color:#535353;
-            
           }
 
+          .data1{
+            height:225px;
+          } //container to display news
 
           #content{
             width:100%;
             height :20px;
+
           }
 
 
@@ -173,11 +179,13 @@ img {
             padding-left: 3%;
             padding-bottom: 10px;
             margin-right: 120px;
+            color:$row3FontColor;
           }
           #nh2{
             padding-right:2%;
             margin-left:20px;
             display: inline-block;
+            color: $row3FontColor;
           }
 
           p{
@@ -201,40 +209,46 @@ img {
               height: 150px;
           }
 
-        #todaySpecial {
+        .todaySpecial {
           @include omega();
           width:100%;
-          //display: inline-block;
-          height:35px;
-          margin:0 !important;
-          position:relative;
+          display: inline-block;
+          margin:0 0 0 0 !important;
+          font-weight:normal;
+          color:$row3FontColor;
+         }//end of todaySpeacial
           
 
 
- #item_Id1{ 
+ 
+ .item_id1{
+
     display: inline-block;
-    //float: left; 
-    width:60% !important;
+    //width:60% !important;
     padding:0;
-    // margin:0;
-    margin:0 0 !important;
+    margin:20px 0 10px 2px !important;
     padding-left: 3%;
     box-sizing:border-box;
-    position: absolute;
-    // padding-bottom: 10px;
- }
+    font-weight: normal;
+   }
 
- #item_Id2{
+ .item_id2{
   display: inline-block;
   box-sizing:border-box;
  margin:0 0 0 0  !important;
- position:absolute;
  right: 10px !important;
  bottom: 20px !important;
-  //float: right;
+ font-weight:normal;
+ }
+
+ .item_id3{
+  display: inline-block;
+  padding-left:3%;
+  font-weight:normal;
+  margin: 0;
+  padding-bottom:10px;
  }
         
- }//end of todaySpeacial
 
 
 //  .data2{
@@ -242,8 +256,13 @@ img {
 //   display:inline-block;
 // }
 
-         #map .glance { 
+
+
+  
+
+         #map.glance { 
           overflow: hidden;
+          height:250px;
 
               .embed{
                 border: 1px solid black;
@@ -252,26 +271,26 @@ img {
          } //end of map
           
         #map {
+          height:307px;
+
         } //end of map
       } //end of .glance
       
     } //end of Row3
 
     #address{
-              margin: 5px 5px;
+              margin: 15px 15px;
               font-weight:normal;
 
               } // end of  address id
 
               #num-map{
-                margin:5px 5px;
+                margin: 0px 15px 15px 15px;
                 font-weight:normal;
               }
 
-//------------------------------------------
-
-
   } //end of container1
+//------------------------------------------
 
   #container2 {
     clear: both;
@@ -354,6 +373,7 @@ img {
         h2 {
           font-size: 3em;
         }
+
 
     
      .foodPhotos {
