@@ -1,29 +1,22 @@
-// (function () { //IIFE01
-
-//  LicenseURL: "https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo&api_key=cd9871ce6a78cb3e9d4a625e7f7e70c4&format=json&nojsoncallback=1&auth_token=72157659473943268-c7d1bff06042a246&api_sig=9f30153bc5371c42dfe2ba4359865ff2";
-// "use strict";
-// // ********CREATING A PROMISE FOR NEWS********
-
-// let newsURL ="https://json-data.herokuapp.com/restaurant/news/1";
-// let newsPromise = $.getJSON(newsURL);
-// newsPromise.then(function(newsobject){
-//   // console.log(newsobject);
-
-// // ********TEMPLATE FOR NEWS*************
-// var newsTemplate=`
-// <h3 class='heading'> Latest News</h3>
-// <hr>
-// <div class="data1">
-//   <div class="content">
-//       <h3 id="nh1">${newsobject.title} </h3>
-//       <h3  id="nh2">${newsobject.date_published}</h3>
-//   </div>
-//   <p> ${newsobject.post} </p>
-// </div>`;
-// $('#latestNews').append(newsTemplate);  // ***********APPEND to HTML
-// }); //end of IIFE01
-
 "use strict";
+
+(function () {
+  //IIFE01
+
+  LicenseURL: "https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo&api_key=cd9871ce6a78cb3e9d4a625e7f7e70c4&format=json&nojsoncallback=1&auth_token=72157659473943268-c7d1bff06042a246&api_sig=9f30153bc5371c42dfe2ba4359865ff2";
+  "use strict";
+  // ********CREATING A PROMISE FOR NEWS********
+
+  var newsURL = "https://json-data.herokuapp.com/restaurant/news/1";
+  var newsPromise = $.getJSON(newsURL);
+  newsPromise.then(function (newsobject) {
+    console.log(newsobject);
+
+    // ********TEMPLATE FOR NEWS*************
+    var newsTemplate = "\n<h3 class='heading'> Latest News</h3>\n<hr>\n<div class=\"data1\">\n  <div class=\"content\">\n      <h3 id=\"nh1\">" + newsobject.title + " </h3>\n      <h3  id=\"nh2\">" + newsobject.date_published + "</h3>\n  </div>\n  <p> " + newsobject.post + " </p>\n</div>";
+    $('#latestNews').append(newsTemplate); // ***********APPEND to HTML
+  });
+})(); //end of IIFE01
 
 (function () {
   //IIFE02
