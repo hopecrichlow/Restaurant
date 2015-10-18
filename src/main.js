@@ -1,3 +1,4 @@
+
 (function () { //IIFE01
 
  LicenseURL: "https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo&api_key=cd9871ce6a78cb3e9d4a625e7f7e70c4&format=json&nojsoncallback=1&auth_token=72157659473943268-c7d1bff06042a246&api_sig=9f30153bc5371c42dfe2ba4359865ff2";
@@ -14,7 +15,7 @@ var newsTemplate=`
 <h3 class='heading'> Latest News</h3>
 <hr>
 <div class="data1">
-  <div class="content">
+  <div class="content"> 
       <h3 id="nh1">${newsobject.title} </h3>
       <h3  id="nh2">${newsobject.date_published}</h3>
   </div>
@@ -76,7 +77,29 @@ for (var i=0;i<temp.length; i++){
 
 (function(){ //IIFE03
 //tabbed content
+//linked NAV
   $(document).ready(function(){
+
+    $('#fixed ul li').click(function(){
+    var tab_id = $(this).attr('data-tab');
+
+    $('ul.tabs li').removeClass('open');
+    $('.tabContent').removeClass('open');
+
+    
+    if (tab_id == "tab1") {
+      $('#nav1a').addClass('open');
+      $("#"+tab_id).addClass('open');
+    } 
+    else if (tab_id == "tab2"){
+      $('#nav2a').addClass('open');
+      $("#"+tab_id).addClass('open');}
+
+      else
+        $('#nav3a').addClass('open');
+        $("#"+tab_id).addClass('open');
+
+  }) //end of EVENT LISTENER for linked NAV
   
   $('ul.tabs li').click(function(){
     var tab_id = $(this).attr('data-tab');
