@@ -1,7 +1,7 @@
 (function () {
 
  LicenseURL: "https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo&api_key=cd9871ce6a78cb3e9d4a625e7f7e70c4&format=json&nojsoncallback=1&auth_token=72157659473943268-c7d1bff06042a246&api_sig=9f30153bc5371c42dfe2ba4359865ff2";
-
+"use strict";
 // ********CREATING A PROMISE FOR NEWS******** 
 
 let newsURL ="https://json-data.herokuapp.com/restaurant/news/1";
@@ -54,10 +54,9 @@ for (var i=0;i<temp.length; i++){
      // console.log(temp[i].item);
     // // ********TEMPLATE FOR SPECIAL*************
        var specialTemplate=`
-      <div class="data2">
       <h3 id="item_id1">${temp[i].item}</h3>
       <h3 id="item_id2">${temp[i].id}</h3>
-      </div>`;
+      `;
 
       $('#todaySpecial').append(specialTemplate);  // ***********APPEND to HTML
     }
@@ -65,6 +64,10 @@ for (var i=0;i<temp.length; i++){
 
 });
 
+ // <div class="data2">
+      // <h3 id="item_id1">${temp[i].item}</h3>
+      // <h3 id="item_id2">${temp[i].id}</h3>
+      // </div>`
 
 // ****************************************************
 

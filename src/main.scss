@@ -120,7 +120,6 @@ img {
     height:350px;
     width:100%;
     margin-bottom :10px;
-    // background-color:yellow;
 
   img{
     width: 1200px;
@@ -136,12 +135,10 @@ img {
         @include span-columns(12);
         background-color: $mainBackgroundColor;
 
-    /* Inset, by Dan Eden */
-
+    // Inset, by Dan Eden*** for the HR color
         hr{
             border: 0;
             height: 0;
-            //border-color: 1px solid black;
             border-top: 1px solid rgba(0, 0, 0, 0.1);
             // border-bottom: 1px solid rgba(255, 255, 255, 0.3);
           }
@@ -155,7 +152,7 @@ img {
       .glance {
         @include span-columns(4 of 12);
         border: $mainBorder;
-        background-color: #E1E1E1; //light green
+        background-color: #E1E1E1; 
         padding-left: 2%;
         padding-right:2%;
 
@@ -170,6 +167,7 @@ img {
 
           #content{
             width:100%;
+            height :20px;
           }
 
 
@@ -192,50 +190,64 @@ img {
             margin-top:5px;
           }
 
-        #todaySpecial {
-          @include omega();
-          
-          .spec-img{
+            .spec-img{
             //display: inline-block;
-            width:70%;
-            height: 150px;
-            margin-left:40px;
+            width:100%;
+            height:150px;
+            //margin-left:40px;
             overflow: hidden;
           }
 
         .sp-img{
           // display: inline-block;
          //margin-left:40px;
-          width: 100%;
-          height: 150px;
-          padding-left:40px;
-          margin:0 auto;
+              width: 100%;
+              overflow: hidden;
+              height: 150px;
           }
- }//end of todaySpeacial
- .data2{
-  width:100%;
 
-}
+        #todaySpecial {
+          @include omega();
+          width:100%;
+          //display: inline-block;
+          height:35px;
+          margin:0 !important;
+          position:relative;
+          
+
 
  #item_Id1{
     display: inline-block;
-    float: left;
-    width:65%;
+    //float: left; 
+    width:60% !important;
     padding:0;
-    margin:0;
+    // margin:0;
+    margin:0 0 !important;
     padding-left: 3%;
     box-sizing:border-box;
+    position: absolute;
     // padding-bottom: 10px;
+ }
 
- }
  #item_Id2{
-  //display: inline-block;
+  display: inline-block;
   box-sizing:border-box;
-  float: right;
-  margin-right: 0;
-  padding-left: 80px;
-    //display: inline-block;
+ margin:0 0 0 0  !important;
+ position:absolute;
+ right: 10px !important;
+ bottom: 20px !important;
+  //float: right;
  }
+        
+ }//end of todaySpeacial
+
+
+//  .data2{
+//   width:100%;
+//   display:inline-block;
+// }
+
+
   
 
          #map .glance { 
