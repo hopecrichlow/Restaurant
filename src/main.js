@@ -59,7 +59,7 @@ for (var i=0;i<temp.length; i++){
       <h3 class="item_id2">${temp[i].price}</h3>
       <h3 class="item_id3">${temp[i].description}</h3>
       `;
-      console.log(temp[i].description)
+      //console.log(temp[i].description)
       $('#todaySpecial').append(specialTemplate);  // ***********APPEND to HTML
     } //end of IF
 } //end of FOR LOOP
