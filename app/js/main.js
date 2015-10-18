@@ -13,7 +13,7 @@
     console.log(newsobject);
 
     // ********TEMPLATE FOR NEWS*************
-    var newsTemplate = "\n<h3 class='heading'> Latest News</h3>\n<hr>\n<div class=\"data1\">\n  <div class=\"content\">\n      <h3 id=\"nh1\">" + newsobject.title + " </h3>\n      <h3  id=\"nh2\">" + newsobject.date_published + "</h3>\n  </div>\n  <p> " + newsobject.post + " </p>\n</div>";
+    var newsTemplate = "\n<h3 class='heading'> Latest News</h3>\n<hr>\n<div class=\"data1\">\n  <div class=\"content\"> \n      <h3 id=\"nh1\">" + newsobject.title + " </h3>\n      <h3  id=\"nh2\">" + newsobject.date_published + "</h3>\n  </div>\n  <p> " + newsobject.post + " </p>\n</div>";
     $('#latestNews').append(newsTemplate); // ***********APPEND to HTML
   });
 })(); //end of IIFE01
@@ -67,7 +67,24 @@
 (function () {
   //IIFE03
   //tabbed content
+  //linked NAV
   $(document).ready(function () {
+
+    $('#fixed ul li').click(function () {
+      var tab_id = $(this).attr('data-tab');
+
+      $('ul.tabs li').removeClass('open');
+      $('.tabContent').removeClass('open');
+
+      if (tab_id == "tab1") {
+        $('#nav1a').addClass('open');
+        $("#" + tab_id).addClass('open');
+      } else if (tab_id == "tab2") {
+        $('#nav2a').addClass('open');
+        $("#" + tab_id).addClass('open');
+      } else $('#nav3a').addClass('open');
+      $("#" + tab_id).addClass('open');
+    }); //end of EVENT LISTENER for linked NAV
 
     $('ul.tabs li').click(function () {
       var tab_id = $(this).attr('data-tab');
@@ -86,7 +103,7 @@
   //IFFE04
 
   //flickr API
-  var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=365dccc5a182acbc32b9f3b607f26f73&tags=thomas+keller+food&format=json&nojsoncallback=1";
+  var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=365dccc5a182acbc32b9f3b607f26f73&tags=thomas+keller+food+porn&format=json&nojsoncallback=1";
 
   //AJAX Call
   var promise = $.getJSON(url);
