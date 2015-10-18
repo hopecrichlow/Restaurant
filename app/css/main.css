@@ -35,7 +35,7 @@ img {
     #asideNav #fixed li a:link {
       color: black; }
 
-@media screen and (max-width: 1435px) {
+@media screen and (max-width: 935px) {
   #asideNav {
     float: none;
     position: inherit;
@@ -135,6 +135,11 @@ img {
         background-color: #E1E1E1;
         padding-left: 2%;
         padding-right: 2%;
+<<<<<<< HEAD
+=======
+        height: 250px;
+        overflow: hidden;
+>>>>>>> master
         display: inline-block; }
         #mainPage #containerWrapper #container1 #updateInfoRow3 .glance:last-child {
           margin-right: 0; }
@@ -214,15 +219,21 @@ img {
       font-weight: normal; }
     #mainPage #containerWrapper #container2 {
       clear: both;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
       background-color: #FFFFFF;
+      margin: 10% 0;
       overflow: hidden; }
+      #mainPage #containerWrapper #container2:last-child {
+        margin-right: 0; }
       #mainPage #containerWrapper #container2 #dynamicContent {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 65.88078%;
+        width: 74.41059%;
         margin-right: 0;
-        background-color: orange;
         height: 1200px;
         float: left; }
         #mainPage #containerWrapper #container2 #dynamicContent:last-child {
@@ -235,7 +246,8 @@ img {
             background-color: pink;
             display: inline-block;
             padding: 10px 15px;
-            cursor: pointer; }
+            cursor: pointer;
+            font-size: 1.5em; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabs li.open {
             background: white; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabContent {
@@ -245,30 +257,42 @@ img {
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabContent.open {
             display: block; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form {
-            display: block; }
+            display: block;
+            font-size: 2em;
+            margin: 4%; }
             #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form label {
-              display: block; }
+              display: block;
+              margin: 2% 0 2% 0; }
               #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form label input {
-                display: block; }
+                display: block;
+                width: 40%; }
+              #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form label select {
+                display: block;
+                margin: 2% 0 2% 0; }
               #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form label button {
-                display: block; }
+                display: block;
+                margin: 2% 0 2% 0;
+                border: 1px solid black;
+                border-radius: 2px; }
       #mainPage #containerWrapper #container2 #foodPhotosContainer {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 31.76157%;
+        width: 23.23176%;
         margin-right: 0;
         background-color: #FFFFFF;
         float: right; }
         #mainPage #containerWrapper #container2 #foodPhotosContainer:last-child {
           margin-right: 0; }
+        #mainPage #containerWrapper #container2 #foodPhotosContainer h2 {
+          font-size: 3em; }
         #mainPage #containerWrapper #container2 #foodPhotosContainer .foodPhotos {
           float: left;
           display: block;
-          margin-right: 7.42297%;
+          margin-right: 10.1484%;
           width: 100%;
           border: 1px solid #B3B3B3;
-          height: 280px;
+          height: 240px;
           background-color: #F7F7F7;
           margin: 0 0 40px 0; }
           #mainPage #containerWrapper #container2 #foodPhotosContainer .foodPhotos:last-child {
@@ -277,6 +301,9 @@ img {
             margin-right: 0; }
           #mainPage #containerWrapper #container2 #foodPhotosContainer .foodPhotos:nth-child(1n+1) {
             clear: left; }
+          #mainPage #containerWrapper #container2 #foodPhotosContainer .foodPhotos img {
+            width: 100%;
+            height: 240px; }
     #mainPage #containerWrapper footer {
       clear: both;
       background-color: #FFFFFF;
