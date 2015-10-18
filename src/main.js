@@ -6,7 +6,7 @@
 
 let newsURL ="https://json-data.herokuapp.com/restaurant/news/1";
 let newsPromise = $.getJSON(newsURL);
-newsPromise.then(function(newsobject){
+newsPromise.then(function(newsobject){ 
   console.log(newsobject);
 
 // ********TEMPLATE FOR NEWS*************

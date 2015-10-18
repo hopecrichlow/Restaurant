@@ -36,28 +36,16 @@ img {
   max-width: 1200px;
   background-color: #94D3F0; //light blue
 
-  #asideNav {
-    float: left;
-
-    #fixed {
-      
-      li {
-        
-      }
-    }
-  }
  #containerWrapper { 
-// <<<<<<< HEAD
-   @include span-columns(12);
+ 
+   @include span-columns(10);
+   @include shift(1);
    background-color: $mainBackgroundColor;
-  // float: left;
-// =======
-//    @include span-columns(12);
-//    background-color: green;
-// >>>>>>> master
+   // float: left;
 
   #container1 {
-    background-color: pink;
+    @include span-columns(12);
+    
     // margin: 20px 0;
     // padding: 20px 0;
 
@@ -160,6 +148,8 @@ img {
         background-color: #E1E1E1; 
         padding-left: 2%;
         padding-right:2%;
+        height: 250px;
+        overflow: hidden;
 
 
           .heading{
@@ -203,7 +193,7 @@ img {
             overflow: hidden;
           }
 
-        .sp-img{
+        .sp-img{ 
           // display: inline-block;
          //margin-left:40px;
               width: 100%;
@@ -221,7 +211,7 @@ img {
           
 
 
- #item_Id1{
+ #item_Id1{ 
     display: inline-block;
     //float: left; 
     width:60% !important;
@@ -251,9 +241,6 @@ img {
 //   width:100%;
 //   display:inline-block;
 // }
-
-
-  
 
          #map .glance { 
           overflow: hidden;
@@ -288,18 +275,18 @@ img {
 
   #container2 {
     clear: both;
+    @include span-columns(12);
+    
     background-color: $mainBackgroundColor;
-    // margin: 20px 0;
+    margin: 10% 0;
     // padding: 20px 0;
     overflow: hidden;
    
 
 
     #dynamicContent {
-      @include span-columns(8);
+      @include span-columns(9);
       @include omega();
-
-      background-color: orange;
       height: 1200px;
       float: left;
 
@@ -332,15 +319,24 @@ img {
         #tab3 {
           form {
             display: block;
+            font-size: 2em;
+            margin: 4%;
 
             label {
               display: block;
+              margin: 2% 0 2% 0;
 
             input {
               display: block;
+              width: 40%;
+            }
+            select {
+              display: block;
+              margin: 2% 0 2% 0;
             }
             button {
               display: block;
+              margin: 2% 0 2% 0;
             }
         } //#tab3
           
@@ -351,19 +347,30 @@ img {
 
   } //end of dynamicContent
     #foodPhotosContainer {
-      @include span-columns(4);
+      @include span-columns(3);
       @include omega();
       background-color: $mainBackgroundColor;
       float: right;
+        h2 {
+          font-size: 3em;
+        }
 
     
      .foodPhotos {
-      @include span-columns(4 of 4);
+      @include span-columns(3 of 3);
       @include omega(1n);
       border: $mainBorder;
-      height: 280px;
+      height: 240px;
       background-color: #F7F7F7;
       margin: 0 0 40px 0;
+
+      img {
+          // position: absolute; 
+          // left: 20%;
+          width: 100%;
+          height: 240px;
+        }  
+
      } //end of foodPhotes
     }//end of #foodPhotosContainer 
   
