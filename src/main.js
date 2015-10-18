@@ -6,7 +6,7 @@
 
 let newsURL ="https://json-data.herokuapp.com/restaurant/news/1";
 let newsPromise = $.getJSON(newsURL);
-newsPromise.then(function(newsobject){
+newsPromise.then(function(newsobject){ 
   console.log(newsobject);
 
 // ********TEMPLATE FOR NEWS*************
@@ -96,7 +96,8 @@ for (var i=0;i<temp.length; i++){
 (function(){//IFFE04
 
 //flickr API
-var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=365dccc5a182acbc32b9f3b607f26f73&tags=food+gourmet&format=json&nojsoncallback=1";
+var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=365dccc5a182acbc32b9f3b607f26f73&tags=thomas+keller+food+porn&format=json&nojsoncallback=1";
+
 //AJAX Call
 var promise = $.getJSON(url);
 //------------------------------------
@@ -110,6 +111,7 @@ var promise = $.getJSON(url);
 // use this for LANDING PAGE
 var photoFilter = function(obj){
 //set a variable for using in the flickrURL
+console.dir(obj);
   var images = obj.photos.photo;
 // check what images is equal to (array of many objects)
 // console.log(images);
@@ -147,33 +149,11 @@ setInterval(function() {
 
 }()); //end of IIFE04
 
-// //FOOD PHOTOS
 
-// // var templateString = $('#itemTemplate').text();
-
-// // var templateFunction = _.template(templateString);
-
-// // let url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=34feffaacaaae2381e9612ed289f9683&tags=expensive+food&format=json&nojsoncallback=1';
-
-// // $.ajax({
-// //   url: url,
-// //   dataType: 'jsonp',
-// //   method: 'get'
-// // }).then (function (response) {
-
-// // _.each(response.results, function (item) {
-// //     var itemHTML = templateFunction(item);
-// //     $('.graphics').append(itemHTML);
-
-// //   // console.log(response);
-
-// // });
-
-// //-----------------------------------------
 (function(){ //IIFE05
 // get 4-6 photos from flickr to use for the right hand photos  
 // get the URL for flickr 
-var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=365dccc5a182acbc32b9f3b607f26f73&tags=food&format=json&nojsoncallback=1";
+var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=365dccc5a182acbc32b9f3b607f26f73&tags=thomas+keller+food&format=json&nojsoncallback=1";
 //AJAX Call
 var promise = $.getJSON(url);
 // //------------------------------------

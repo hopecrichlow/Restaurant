@@ -35,7 +35,7 @@ img {
     #asideNav #fixed li a:link {
       color: black; }
 
-@media screen and (max-width: 1435px) {
+@media screen and (max-width: 935px) {
   #asideNav {
     float: none;
     position: inherit;
@@ -52,7 +52,7 @@ img {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  max-width: 1000px;
   background-color: #FFFFFF; }
   #mainPage::after {
     clear: both;
@@ -66,165 +66,174 @@ img {
     background-color: #FFFFFF; }
     #mainPage #containerWrapper:last-child {
       margin-right: 0; }
-    #mainPage #containerWrapper #container1 {
-      background-color: pink; }
-      #mainPage #containerWrapper #container1 #logoRow1 {
-        background-color: grey;
-        padding: 2%;
-        overflow: hidden; }
-        #mainPage #containerWrapper #container1 #logoRow1 #logo {
-          width: 25%;
-          padding: 2%;
+    #mainPage #containerWrapper #container1 #logoRow1 {
+      padding: 2%;
+      overflow: hidden;
+      height: 117px; }
+      #mainPage #containerWrapper #container1 #logoRow1 #logo {
+        float: left; }
+        #mainPage #containerWrapper #container1 #logoRow1 #logo img {
+          max-width: 100%;
+          height: 115px;
           float: left;
-          background-color: blue; }
-        #mainPage #containerWrapper #container1 #logoRow1 #socialMedia {
-          width: 35%;
-          float: right;
-          padding-left: 4%;
-          margin-top: 10px;
-          background-color: red; }
-          #mainPage #containerWrapper #container1 #logoRow1 #socialMedia ul {
-            padding-left: 0; }
-          #mainPage #containerWrapper #container1 #logoRow1 #socialMedia li {
-            display: inline-block; }
-          #mainPage #containerWrapper #container1 #logoRow1 #socialMedia #fb {
-            content: "";
-            background: url("../images/social_sprite.png") no-repeat -1px -3px;
-            background-size: 100px 100px;
-            width: 44px;
-            height: 43px; }
-          #mainPage #containerWrapper #container1 #logoRow1 #socialMedia #twitter {
-            content: "";
-            background: url("../images/social_sprite.png") no-repeat -47px -2px;
-            background-size: 100px 100px;
-            width: 44px;
-            height: 44px; }
-          #mainPage #containerWrapper #container1 #logoRow1 #socialMedia #insta {
-            content: "";
-            background: url("../images/social_sprite.png") no-repeat -1px -49px;
-            background-size: 100px 100px;
-            width: 44px;
-            height: 43px; }
-      #mainPage #containerWrapper #container1 #imgRow2 {
-        height: 350px;
-        width: 100%;
-        margin-bottom: 10px; }
-        #mainPage #containerWrapper #container1 #imgRow2 img {
-          width: 1200px;
-          height: 350px; }
-      #mainPage #containerWrapper #container1 #updateInfoRow3 {
+          padding-left: 5%; }
+      #mainPage #containerWrapper #container1 #logoRow1 #socialMedia {
+        width: 35%;
+        float: right;
+        padding-left: 4%;
+        padding-top: 20px;
+        margin-top: 10px; }
+        #mainPage #containerWrapper #container1 #logoRow1 #socialMedia ul {
+          padding-left: 0; }
+        #mainPage #containerWrapper #container1 #logoRow1 #socialMedia li {
+          display: inline-block;
+          margin-right: 10%; }
+        #mainPage #containerWrapper #container1 #logoRow1 #socialMedia #fb {
+          content: "";
+          background: url("../images/social_sprite.png") no-repeat -1px -3px;
+          background-size: 100px 100px;
+          width: 44px;
+          height: 43px; }
+        #mainPage #containerWrapper #container1 #logoRow1 #socialMedia #twitter {
+          content: "";
+          background: url("../images/social_sprite.png") no-repeat -47px -2px;
+          background-size: 100px 100px;
+          width: 44px;
+          height: 44px; }
+        #mainPage #containerWrapper #container1 #logoRow1 #socialMedia #insta {
+          content: "";
+          background: url("../images/social_sprite.png") no-repeat -1px -49px;
+          background-size: 100px 100px;
+          width: 44px;
+          height: 43px; }
+    #mainPage #containerWrapper #container1 #imgRow2 {
+      height: 350px;
+      width: 100%;
+      margin-bottom: 10px; }
+      #mainPage #containerWrapper #container1 #imgRow2 img {
+        width: 1200px;
+        height: 350px; }
+    #mainPage #containerWrapper #container1 #updateInfoRow3 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      background-color: #FFFFFF; }
+      #mainPage #containerWrapper #container1 #updateInfoRow3:last-child {
+        margin-right: 0; }
+      #mainPage #containerWrapper #container1 #updateInfoRow3 hr {
+        border: 0;
+        height: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1); }
+      #mainPage #containerWrapper #container1 #updateInfoRow3 #latestNews {
+        padding-left: 0;
+        color: #828282; }
+      #mainPage #containerWrapper #container1 #updateInfoRow3 .glance {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%;
-        background-color: #FFFFFF; }
-        #mainPage #containerWrapper #container1 #updateInfoRow3:last-child {
+        width: 31.76157%;
+        border: 1px solid #B3B3B3;
+        color: #535353;
+        background-color: #E1E1E1;
+        padding-left: 2%;
+        padding-right: 2%;
+        height: 250px;
+        overflow: hidden;
+        display: inline-block; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance:last-child {
           margin-right: 0; }
-        #mainPage #containerWrapper #container1 #updateInfoRow3 hr {
-          border: 0;
-          height: 0;
-          border-top: 1px solid rgba(0, 0, 0, 0.1); }
-        #mainPage #containerWrapper #container1 #updateInfoRow3 #latestNews {
-          padding-left: 0;
-          color: #828282; }
-        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 31.76157%;
-          border: 1px solid #B3B3B3;
-          color: #535353;
-          background-color: #E1E1E1;
-          padding-left: 2%;
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .heading {
+          padding-left: 3%;
+          font-size: 1.5em;
+          color: #535353; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .data1 {
+          height: 225px; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #content {
+          width: 100%;
+          height: 20px; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #nh1 {
+          display: inline-block;
+          padding: 0;
+          margin: 0;
+          padding-left: 3%;
+          padding-bottom: 10px;
+          margin-right: 120px;
+          color: #535353; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #nh2 {
           padding-right: 2%;
-          display: inline-block; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance:last-child {
-            margin-right: 0; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .heading {
-            padding-left: 3%;
-            font-size: 1.5em;
-            color: #535353; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .data1 {
-            height: 225px; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #content {
-            width: 100%;
-            height: 20px; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #nh1 {
-            display: inline-block;
-            padding: 0;
-            margin: 0;
-            padding-left: 3%;
-            padding-bottom: 10px;
-            margin-right: 120px;
-            color: #535353; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #nh2 {
-            padding-right: 2%;
-            margin-left: 20px;
-            display: inline-block;
-            color: #535353; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance p {
-            padding-left: 3%;
-            margin-top: 5px; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .spec-img {
-            width: 100%;
-            height: 150px;
-            overflow: hidden; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .sp-img {
-            width: 100%;
-            overflow: hidden;
-            height: 150px; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .todaySpecial {
-            margin-right: 0;
-            width: 100%;
-            display: inline-block;
-            margin: 0 0 0 0 !important;
-            font-weight: normal;
-            color: #535353; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .item_id1 {
-            display: inline-block;
-            padding: 0;
-            margin: 20px 0 10px 2px !important;
-            padding-left: 3%;
-            box-sizing: border-box;
-            font-weight: normal; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .item_id2 {
-            display: inline-block;
-            box-sizing: border-box;
-            margin: 0 0 0 0  !important;
-            right: 10px !important;
-            bottom: 20px !important;
-            font-weight: normal; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .item_id3 {
-            display: inline-block;
-            padding-left: 3%;
-            font-weight: normal;
-            margin: 0;
-            padding-bottom: 10px; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map.glance {
-            overflow: hidden;
-            height: 250px; }
-            #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map.glance .embed {
-              border: 1px solid black;
-              margin-top: 10px; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map {
-            height: 307px; }
-      #mainPage #containerWrapper #container1 #address {
-        margin: 15px 15px;
-        font-weight: normal; }
-      #mainPage #containerWrapper #container1 #num-map {
-        margin: 0px 15px 15px 15px;
-        font-weight: normal; }
+          margin-left: 20px;
+          display: inline-block;
+          color: #535353; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance p {
+          padding-left: 3%;
+          margin-top: 5px; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .spec-img {
+          width: 100%;
+          height: 150px;
+          overflow: hidden; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .sp-img {
+          width: 100%;
+          overflow: hidden;
+          height: 150px; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .todaySpecial {
+          margin-right: 0;
+          width: 100%;
+          display: inline-block;
+          margin: 0 0 0 0 !important;
+          font-weight: normal;
+          color: #535353; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .item_id1 {
+          display: inline-block;
+          padding: 0;
+          margin: 20px 0 10px 2px !important;
+          padding-left: 3%;
+          box-sizing: border-box;
+          font-weight: normal; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .item_id2 {
+          display: inline-block;
+          box-sizing: border-box;
+          margin: 0 0 0 0  !important;
+          right: 10px !important;
+          bottom: 20px !important;
+          font-weight: normal; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .item_id3 {
+          display: inline-block;
+          padding-left: 3%;
+          font-weight: normal;
+          margin: 0;
+          padding-bottom: 10px; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map.glance {
+          overflow: hidden;
+          height: 250px; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map.glance .embed {
+            border: 1px solid black;
+            margin-top: 10px; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map {
+          height: 307px; }
+    #mainPage #containerWrapper #container1 #address {
+      margin: 15px 15px;
+      font-weight: normal; }
+    #mainPage #containerWrapper #container1 #num-map {
+      margin: 0px 15px 15px 15px;
+      font-weight: normal; }
     #mainPage #containerWrapper #container2 {
       clear: both;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
       background-color: #FFFFFF;
+      margin: 10% 0;
       overflow: hidden; }
+      #mainPage #containerWrapper #container2:last-child {
+        margin-right: 0; }
       #mainPage #containerWrapper #container2 #dynamicContent {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 65.88078%;
+        width: 74.41059%;
         margin-right: 0;
-        background-color: orange;
         height: 1200px;
         float: left; }
         #mainPage #containerWrapper #container2 #dynamicContent:last-child {
@@ -237,7 +246,8 @@ img {
             background-color: pink;
             display: inline-block;
             padding: 10px 15px;
-            cursor: pointer; }
+            cursor: pointer;
+            font-size: 1.5em; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabs li.open {
             background: white; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabContent {
@@ -247,30 +257,42 @@ img {
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabContent.open {
             display: block; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form {
-            display: block; }
+            display: block;
+            font-size: 2em;
+            margin: 4%; }
             #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form label {
-              display: block; }
+              display: block;
+              margin: 2% 0 2% 0; }
               #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form label input {
-                display: block; }
+                display: block;
+                width: 40%; }
+              #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form label select {
+                display: block;
+                margin: 2% 0 2% 0; }
               #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form label button {
-                display: block; }
+                display: block;
+                margin: 2% 0 2% 0;
+                border: 1px solid black;
+                border-radius: 2px; }
       #mainPage #containerWrapper #container2 #foodPhotosContainer {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 31.76157%;
+        width: 23.23176%;
         margin-right: 0;
         background-color: #FFFFFF;
         float: right; }
         #mainPage #containerWrapper #container2 #foodPhotosContainer:last-child {
           margin-right: 0; }
+        #mainPage #containerWrapper #container2 #foodPhotosContainer h2 {
+          font-size: 3em; }
         #mainPage #containerWrapper #container2 #foodPhotosContainer .foodPhotos {
           float: left;
           display: block;
-          margin-right: 7.42297%;
+          margin-right: 10.1484%;
           width: 100%;
           border: 1px solid #B3B3B3;
-          height: 280px;
+          height: 240px;
           background-color: #F7F7F7;
           margin: 0 0 40px 0; }
           #mainPage #containerWrapper #container2 #foodPhotosContainer .foodPhotos:last-child {
@@ -279,6 +301,9 @@ img {
             margin-right: 0; }
           #mainPage #containerWrapper #container2 #foodPhotosContainer .foodPhotos:nth-child(1n+1) {
             clear: left; }
+          #mainPage #containerWrapper #container2 #foodPhotosContainer .foodPhotos img {
+            width: 100%;
+            height: 240px; }
     #mainPage #containerWrapper footer {
       clear: both;
       background-color: #FFFFFF;

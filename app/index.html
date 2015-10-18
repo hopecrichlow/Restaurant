@@ -9,6 +9,7 @@
 </head>  
 <body> 
 <!-- ...............................................     -->
+
 <aside id="asideNav">
     <div id="fixed">
       <ul>
@@ -29,7 +30,7 @@
 
 
     <div id="logoRow1">
-      <div id="logo"></div>
+      <div id="logo"><img src="../images/duck_face.png"></div>
       <div id="socialMedia">
         <ul>
           <li id="fb"></li>
@@ -85,9 +86,9 @@
 
     <div class="tabWrapper">
      <ul class="tabs">
-      <li class="tabLink open" data-tab="tab1">Tab One</li>
-      <li class="tabLink" data-tab="tab2">Tab Two</li>
-      <li class="tabLink" data-tab="tab3">Tab Three</li>
+      <li class="tabLink open" data-tab="tab1">Our Story</li>
+      <li class="tabLink" data-tab="tab2">Menu</li>
+      <li class="tabLink" data-tab="tab3">Reservations</li>
    </ul>
 
         <div id="tab1" class="tabContent open">
@@ -98,12 +99,12 @@
       </div>
       <div id="tab3" class="tabContent">
         <form>
-          <label>Full Name
-          <input type="text"></label>
-          <label>Number of Guest
-          <input type="text">
+          <label>Full Name</label>
+          <input id="inputName" type="text">
+          <label>Number of Guest</label>
+          <input id="inputDate" type="text">
           <label>Date</label>
-          <input type="text">
+          <input id="inputNotes" type="text">
           <label>Special Notes</label>
           <input type="text">
           <label>Seating Preference</label>
@@ -113,7 +114,7 @@
             <option>Kabbana</option>
             <option>at the bar</option>
            </select> 
-
+           <br><br>
           <button>Reserve Table</button>
         </form>
       </div>
@@ -123,6 +124,7 @@
    </div> <!-- end of dynamicContent -->
 
    <div id="foodPhotosContainer">
+   <h2>Food Photos...</h2>
     
 
    </div> <!-- end of foodPhotosContainer -->
