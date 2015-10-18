@@ -17,8 +17,8 @@ var newsTemplate=`
   <div class="content">
       <h3 id="nh1">${newsobject.title} </h3>
       <h3  id="nh2">${newsobject.date_published}</h3>
-  </div>
-  <p> ${newsobject.post} </p>
+  </div> //end of content
+  <div id="post"><p> ${newsobject.post} </p></div>
 </div>`;
 $('#latestNews').append(newsTemplate);  // ***********APPEND to HTML
   });
@@ -76,7 +76,29 @@ for (var i=0;i<temp.length; i++){
 
 (function(){ //IIFE03
 //tabbed content
+//linked NAV
   $(document).ready(function(){
+
+    $('#fixed ul li').click(function(){
+    var tab_id = $(this).attr('data-tab');
+
+    $('ul.tabs li').removeClass('open');
+    $('.tabContent').removeClass('open');
+
+    
+    if (tab_id == "tab1") {
+      $('#nav1a').addClass('open');
+      $("#"+tab_id).addClass('open');
+    } 
+    else if (tab_id == "tab2"){
+      $('#nav2a').addClass('open');
+      $("#"+tab_id).addClass('open');}
+
+      else
+        $('#nav3a').addClass('open');
+        $("#"+tab_id).addClass('open');
+
+  }) //end of EVENT LISTENER for linked NAV
   
   $('ul.tabs li').click(function(){
     var tab_id = $(this).attr('data-tab');
@@ -91,7 +113,6 @@ for (var i=0;i<temp.length; i++){
 })//end of .ready function
 //end of tabbed content  
 })(); //end of IIFE03
-
 
 (function(){//IFFE04
 

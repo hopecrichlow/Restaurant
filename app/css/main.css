@@ -165,6 +165,15 @@ img {
                 display: inline;
                 color: #535353;
                 float: right; }
+            #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #latestNews .data1 #post {
+              width: 250px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              margin: 0 0 2% 0; }
+              #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #latestNews .data1 #post p {
+                display: inline;
+                color: red; }
         #mainPage #containerWrapper #container1 #updateInfoRow3 .glance p {
           padding-left: 3%;
           margin-top: 5px; }
