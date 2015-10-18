@@ -158,11 +158,11 @@ img {
           margin: 0;
           padding-left: 3%;
           padding-bottom: 10px;
-          margin-right: 120px;
+          margin-right: 85px;
           color: #535353; }
         #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #nh2 {
           padding-right: 2%;
-          margin-left: 20px;
+          margin-left: 0px;
           display: inline-block;
           color: #535353; }
         #mainPage #containerWrapper #container1 #updateInfoRow3 .glance p {
@@ -186,7 +186,7 @@ img {
         #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .item_id1 {
           display: inline-block;
           padding: 0;
-          margin: 20px 0 10px 2px !important;
+          margin: 2px 0 2px 2px !important;
           padding-left: 3%;
           box-sizing: border-box;
           font-weight: normal; }
@@ -202,7 +202,9 @@ img {
           padding-left: 3%;
           font-weight: normal;
           margin: 0;
-          padding-bottom: 10px; }
+          padding-bottom: 10px;
+          text-overflow: ellipsis;
+          overflow: hidden; }
         #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map.glance {
           overflow: hidden;
           height: 250px; }
@@ -212,10 +214,10 @@ img {
         #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map {
           height: 307px; }
     #mainPage #containerWrapper #container1 #address {
-      margin: 15px 15px;
+      margin: 5px 10px;
       font-weight: normal; }
     #mainPage #containerWrapper #container1 #num-map {
-      margin: 0px 15px 15px 15px;
+      margin: 0px 10px;
       font-weight: normal; }
     #mainPage #containerWrapper #container2 {
       clear: both;
