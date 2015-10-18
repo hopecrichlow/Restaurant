@@ -38,7 +38,7 @@ img {
       
     li {
       padding: 0 0 1em 0;
-      font-size: 2.5em;
+      font-size: 2em;
       a:link {
         color: black;
       }
@@ -46,7 +46,7 @@ img {
   }
 }
 
-@media screen and (max-width:935px) {
+@media screen and (max-width:1250px) {
   #asideNav {
     float: none;
     position: inherit;
@@ -65,7 +65,7 @@ img {
 
 #mainPage {
   @include outer-container;
-  max-width: 1000px;
+  max-width: 1100px;
   background-color: $mainBackgroundColor;
 
 
@@ -160,18 +160,7 @@ img {
         background-color: $mainBackgroundColor;
 
     // Inset, by Dan Eden*** for the HR color
-        hr{
-            border: 0;
-            height: 0;
-            border-top: 1px solid rgba(0, 0, 0, 0.1);
-            // border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-          }
-      
-        #latestNews{
-          padding-left:0;
-          color: #828282;
-           } //end of latestNews
-    
+        
       .glance {
         @include span-columns(4 of 12);
         border: $mainBorder;
@@ -183,7 +172,16 @@ img {
         overflow: hidden;
         display: inline-block;
 
+        hr{
+            border: 0;
+            height: 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            // border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
 
+        #latestNews{
+          padding-left:0;
+          color: #828282;
 
           .heading{
             padding-left:3%;
@@ -193,30 +191,47 @@ img {
 
           .data1{
             height:225px;
-          } //container to display news
-
-          #content{
-            width:100%;
-            height :20px;
-
-          }
+            
+            .content{
+              // display: block;
+              width:100%;
+              height :20px;
 
 
-          #nh1{
-          display:inline-block;
-            padding:0;
-            margin:0;
-            padding-left: 3%;
-            padding-bottom: 10px;
-            margin-right: 85px;
-            color:$row3FontColor;
-          }
-          #nh2{
-            padding-right:2%;
-            margin-left:0px;
-            display: inline-block;
-            color: $row3FontColor;
-          }
+              #nh1{
+                display:inline;
+                padding:0;
+                margin:0;
+                padding-left: 3%;
+                padding-bottom: 10px;
+                // margin-right: 120px;
+                color:$row3FontColor;
+                float: left;
+              }
+              #nh2{
+                padding-right:2%;
+                // margin-left:20px;
+                display: inline;
+                color: $row3FontColor;
+                float: right;
+              }
+
+            } //end .content
+             #post {
+                width: 250px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                margin: 0 0 2% 0;
+                p {
+                  display: inline;
+                  color: red;
+                }
+              } //end of #post
+
+          } //end .data1
+      
+        } //end of #latestNews
 
           p{
             padding-left: 3%;
@@ -256,7 +271,7 @@ img {
     display: inline-block;
     //width:60% !important;
     padding:0;
-    margin:2px 0 2px 2px !important;
+    margin:20px 0 10px 2px !important;
     padding-left: 3%;
     box-sizing:border-box;
     font-weight: normal;
@@ -277,9 +292,6 @@ img {
   font-weight:normal;
   margin: 0;
   padding-bottom:10px;
-  //white-space: nowrap;
-  text-overflow:ellipsis;
-  overflow: hidden;
  }
 
          #map.glance { 
@@ -301,13 +313,13 @@ img {
     } //end of Row3
 
     #address{
-              margin: 5px 10px;
+              margin: 15px 15px;
               font-weight:normal;
 
               } // end of  address id
 
               #num-map{
-                margin: 0px 10px;
+                margin: 0px 15px 15px 15px;
                 font-weight:normal;
               }
 

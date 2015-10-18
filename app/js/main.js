@@ -13,7 +13,7 @@
     console.log(newsobject);
 
     // ********TEMPLATE FOR NEWS*************
-    var newsTemplate = "\n<h3 class='heading'> Latest News</h3>\n<hr>\n<div class=\"data1\">\n  <div class=\"content\"> \n      <h3 id=\"nh1\">" + newsobject.title + " </h3>\n      <h3  id=\"nh2\">" + newsobject.date_published + "</h3>\n  </div>\n  <p> " + newsobject.post + " </p>\n</div>";
+    var newsTemplate = "\n<h3 class='heading'> Latest News</h3>\n<hr>\n<div class=\"data1\">\n  <div class=\"content\">\n      <h3 id=\"nh1\">" + newsobject.title + " </h3>\n      <h3  id=\"nh2\">" + newsobject.date_published + "</h3>\n  </div> //end of content\n  <div id=\"post\"><p> " + newsobject.post + " </p></div>\n</div>";
     $('#latestNews').append(newsTemplate); // ***********APPEND to HTML
   });
 })(); //end of IIFE01
@@ -160,15 +160,13 @@
     var images = _.first(obj.photos.photo, [4]);
 
     _.each(images, function (image) {
-      //console.log(image);
+      console.log(image);
       //build a URL according to the API manual
       var flickrURL = "http://farm" + image.farm + ".static.flickr.com/" + image.server + "/" + image.id + "_" + image.secret + ".jpg";
       //build a TEMPLATE to insert into the HTML
       var foodPhoto = "\n    <div class=\"foodPhotos\">\n    <img src=\"" + flickrURL + "\" />\n    </div>";
-      console.dir(slideshow);
+      // console.dir(slideshow);
       $('#foodPhotosContainer').append(foodPhoto);
     }); //end of _.each
   }); //end of AJAX Call
 })(); //end of IIFE05
-
-// ------------------------------------------------

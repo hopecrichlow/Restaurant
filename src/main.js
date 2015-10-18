@@ -1,4 +1,3 @@
-
 (function () { //IIFE01
 
  LicenseURL: "https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo&api_key=cd9871ce6a78cb3e9d4a625e7f7e70c4&format=json&nojsoncallback=1&auth_token=72157659473943268-c7d1bff06042a246&api_sig=9f30153bc5371c42dfe2ba4359865ff2";
@@ -15,11 +14,11 @@ var newsTemplate=`
 <h3 class='heading'> Latest News</h3>
 <hr>
 <div class="data1">
-  <div class="content"> 
+  <div class="content">
       <h3 id="nh1">${newsobject.title} </h3>
       <h3  id="nh2">${newsobject.date_published}</h3>
-  </div>
-  <p> ${newsobject.post} </p>
+  </div> //end of content
+  <div id="post"><p> ${newsobject.post} </p></div>
 </div>`;
 $('#latestNews').append(newsTemplate);  // ***********APPEND to HTML
   });
@@ -115,7 +114,6 @@ for (var i=0;i<temp.length; i++){
 //end of tabbed content  
 })(); //end of IIFE03
 
-
 (function(){//IFFE04
 
 //flickr API
@@ -185,7 +183,7 @@ var promise = $.getJSON(url);
     var images = _.first(obj.photos.photo, [4]);
 
      _.each(images, function(image){
-      //console.log(image);
+      console.log(image);
 //build a URL according to the API manual
        var flickrURL = "http://farm"+image.farm+".static.flickr.com/"+image.server+"/"+image.id+"_"+image.secret+".jpg";
 //build a TEMPLATE to insert into the HTML
@@ -193,13 +191,9 @@ var promise = $.getJSON(url);
     <div class="foodPhotos">
     <img src="${ flickrURL }" />
     </div>`;
-    console.dir(slideshow);
+    // console.dir(slideshow);
     $('#foodPhotosContainer').append(foodPhoto);
     }); //end of _.each
   }); //end of AJAX Call 
 
 })(); //end of IIFE05
-
-// ------------------------------------------------
-
-
