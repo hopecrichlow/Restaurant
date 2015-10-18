@@ -30,31 +30,49 @@ ul, li{
 img {
   max-width: 100%;
 }
- 
-#mainPage {
-  @include outer-container;
-  max-width: 1200px;
-  background-color: #94D3F0; //light blue
+#asideNav {
+  float: left;
+  position: fixed;
 
-  #asideNav {
-    float: left;
-
-    #fixed {
+  #fixed {
       
-      li {
-        
+    li {
+      padding: 0 0 1em 0;
+      font-size: 2.5em;
+      a:link {
+        color: black;
       }
     }
   }
+}
+
+@media screen and (max-width:1435px) {
+  #asideNav {
+    float: none;
+    position: inherit;
+    font-size: 1.2em;
+    #fixed {
+      margin: auto;
+      text-align: center;
+      li {
+      display: inline-block;
+      margin: 0 1em;
+      padding: 0;
+      }
+    }
+  }
+}//@media end (asideNav)
+
+#mainPage {
+  @include outer-container;
+  max-width: 1200px;
+  background-color: $mainBackgroundColor;
+
+
  #containerWrapper { 
-// <<<<<<< HEAD
    @include span-columns(12);
    background-color: $mainBackgroundColor;
-  // float: left;
-// =======
-//    @include span-columns(12);
-//    background-color: green;
-// >>>>>>> master
+
 
   #container1 {
     background-color: pink;

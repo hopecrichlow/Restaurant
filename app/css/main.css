@@ -26,18 +26,38 @@ ul, li {
 img {
   max-width: 100%; }
 
+#asideNav {
+  float: left;
+  position: fixed; }
+  #asideNav #fixed li {
+    padding: 0 0 1em 0;
+    font-size: 2.5em; }
+    #asideNav #fixed li a:link {
+      color: black; }
+
+@media screen and (max-width: 1435px) {
+  #asideNav {
+    float: none;
+    position: inherit;
+    font-size: 1.2em; }
+    #asideNav #fixed {
+      margin: auto;
+      text-align: center; }
+      #asideNav #fixed li {
+        display: inline-block;
+        margin: 0 1em;
+        padding: 0; } }
+
 #mainPage {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
-  background-color: #94D3F0; }
+  background-color: #FFFFFF; }
   #mainPage::after {
     clear: both;
     content: "";
     display: table; }
-  #mainPage #asideNav {
-    float: left; }
   #mainPage #containerWrapper {
     float: left;
     display: block;

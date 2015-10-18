@@ -86,6 +86,7 @@ for (var i=0;i<temp.length; i++){
 
     $(this).addClass('open');
     $("#"+tab_id).addClass('open');
+
   }) //end of EVENT LISTENER
 })//end of .ready function
 //end of tabbed content  
@@ -195,3 +196,4 @@ var promise = $.getJSON(url);
   }); //end of AJAX Call 
 
 })(); //end of IIFE05
+
