@@ -65,7 +65,7 @@ img {
 
 #mainPage {
   @include outer-container;
-  max-width: 1200px;
+  max-width: 1000px;
   background-color: $mainBackgroundColor;
 
 
@@ -75,10 +75,6 @@ img {
 
 
   #container1 {
-    background-color: pink;
-    // margin: 20px 0;
-    // padding: 20px 0;
-
 
 //------------------------------------------
     #logoRow1 {
@@ -275,16 +271,6 @@ img {
   padding-bottom:10px;
  }
         
-
-
-//  .data2{
-//   width:100%;
-//   display:inline-block;
-// }
-
-
-  
-
          #map.glance { 
           overflow: hidden;
           height:250px;
