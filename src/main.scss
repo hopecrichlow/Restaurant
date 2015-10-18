@@ -320,6 +320,7 @@ img {
           display: inline-block;
           padding: 10px 15px;
           cursor: pointer;
+          font-size: 1.5em;
         }
 
         .tabs li.open {
@@ -336,7 +337,7 @@ img {
           display: block;
         }
         #tab3 {
-          form {
+          form { 
             display: block;
             font-size: 2em;
             margin: 4%;
@@ -348,7 +349,14 @@ img {
             input {
               display: block;
               width: 40%;
-            }
+
+              #inputName {
+
+              }
+              #inputDate {
+
+              }
+            } //end of input
             select {
               display: block;
               margin: 2% 0 2% 0;
@@ -356,6 +364,8 @@ img {
             button {
               display: block;
               margin: 2% 0 2% 0;
+              border: 1px solid black;
+              border-radius: 2px;
             }
         } //#tab3
           

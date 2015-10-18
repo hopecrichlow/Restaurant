@@ -121,12 +121,9 @@ img {
           background-color: #E1E1E1;
           padding-left: 2%;
           padding-right: 2%;
-<<<<<<< HEAD
           height: 250px;
-          overflow: hidden; }
-=======
+          overflow: hidden;
           display: inline-block; }
->>>>>>> master
           #mainPage #containerWrapper #container1 #updateInfoRow3 .glance:last-child {
             margin-right: 0; }
           #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .heading {
@@ -232,7 +229,8 @@ img {
             background-color: pink;
             display: inline-block;
             padding: 10px 15px;
-            cursor: pointer; }
+            cursor: pointer;
+            font-size: 1.5em; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabs li.open {
             background: white; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabContent {
@@ -256,7 +254,9 @@ img {
                 margin: 2% 0 2% 0; }
               #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form label button {
                 display: block;
-                margin: 2% 0 2% 0; }
+                margin: 2% 0 2% 0;
+                border: 1px solid black;
+                border-radius: 2px; }
       #mainPage #containerWrapper #container2 #foodPhotosContainer {
         float: left;
         display: block;
