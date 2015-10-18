@@ -51,7 +51,7 @@
         // console.log(temp[i].item);
         // // ********TEMPLATE FOR SPECIAL*************
         var specialTemplate = "\n      <h3 class=\"item_id1\">" + temp[i].item + "...................................</h3>\n      <h3 class=\"item_id2\">" + temp[i].price + "</h3>\n      <h3 class=\"item_id3\">" + temp[i].description + "</h3>\n      ";
-        console.log(temp[i].description);
+        //console.log(temp[i].description)
         $('#todaySpecial').append(specialTemplate); // ***********APPEND to HTML
       } //end of IF
     } //end of FOR LOOP

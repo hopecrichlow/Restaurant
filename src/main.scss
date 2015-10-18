@@ -30,26 +30,52 @@ ul, li{
 img {
   max-width: 100%;
 }
- 
+#asideNav {
+  float: left;
+  position: fixed;
+
+  #fixed {
+      
+    li {
+      padding: 0 0 1em 0;
+      font-size: 2.5em;
+      a:link {
+        color: black;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:935px) {
+  #asideNav {
+    float: none;
+    position: inherit;
+    font-size: 1.2em;
+    #fixed {
+      margin: auto;
+      text-align: center;
+      li {
+      display: inline-block;
+      margin: 0 1em;
+      padding: 0;
+      }
+    }
+  }
+}//@media end (asideNav)
+
 #mainPage {
   @include outer-container;
-  max-width: 1200px;
-  background-color: #94D3F0; //light blue
+  max-width: 1000px;
+  background-color: $mainBackgroundColor;
+
 
  #containerWrapper { 
- 
-   @include span-columns(10);
-   @include shift(1);
+   @include span-columns(12);
    background-color: $mainBackgroundColor;
-   // float: left;
+
 
   #container1 {
-    @include span-columns(12);
     
-    // margin: 20px 0;
-    // padding: 20px 0;
-
-
 //------------------------------------------
     #logoRow1 {
       background-color: grey;
@@ -61,7 +87,6 @@ img {
         width: 25%;
         padding: 2%;
         float: left;
-        background-color: blue;
         } //end of logo
 
 
@@ -70,7 +95,6 @@ img {
         float: right;
         padding-left: 4%;
         margin-top: 10px;
-        background-color: red;
     
         ul{
           padding-left: 0;
@@ -248,18 +272,7 @@ img {
   margin: 0;
   padding-bottom:10px;
  }
-        
-
-
-//  .data2{
-//   width:100%;
-//   display:inline-block;
-// }
-
-
-
   
-
          #map.glance { 
           overflow: hidden;
           height:250px;

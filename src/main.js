@@ -59,7 +59,7 @@ for (var i=0;i<temp.length; i++){
       <h3 class="item_id2">${temp[i].price}</h3>
       <h3 class="item_id3">${temp[i].description}</h3>
       `;
-      console.log(temp[i].description)
+      //console.log(temp[i].description)
       $('#todaySpecial').append(specialTemplate);  // ***********APPEND to HTML
     } //end of IF
 } //end of FOR LOOP
@@ -86,6 +86,7 @@ for (var i=0;i<temp.length; i++){
 
     $(this).addClass('open');
     $("#"+tab_id).addClass('open');
+
   }) //end of EVENT LISTENER
 })//end of .ready function
 //end of tabbed content  
@@ -95,7 +96,7 @@ for (var i=0;i<temp.length; i++){
 (function(){//IFFE04
 
 //flickr API
-var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=365dccc5a182acbc32b9f3b607f26f73&tags=thomas+keller+food&format=json&nojsoncallback=1";
+var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=365dccc5a182acbc32b9f3b607f26f73&tags=thomas+keller+food+porn&format=json&nojsoncallback=1";
 
 //AJAX Call
 var promise = $.getJSON(url);
@@ -175,3 +176,4 @@ var promise = $.getJSON(url);
   }); //end of AJAX Call 
 
 })(); //end of IIFE05
+
