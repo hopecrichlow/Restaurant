@@ -16,7 +16,7 @@ a {
   margin: 0;
   padding: 0; }
   a:visited {
-    color: white; }
+    color: black; }
 
 ul, li {
   list-style: none;
@@ -31,11 +31,11 @@ img {
   position: fixed; }
   #asideNav #fixed li {
     padding: 0 0 1em 0;
-    font-size: 2.5em; }
+    font-size: 2em; }
     #asideNav #fixed li a:link {
       color: black; }
 
-@media screen and (max-width: 935px) {
+@media screen and (max-width: 1250px) {
   #asideNav {
     float: none;
     position: inherit;
@@ -52,7 +52,7 @@ img {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1000px;
+  max-width: 1100px;
   background-color: #FFFFFF; }
   #mainPage::after {
     clear: both;
@@ -73,14 +73,12 @@ img {
       #mainPage #containerWrapper #container1 #logoRow1 #logo {
         width: 25%;
         padding: 2%;
-        float: left;
-        background-color: blue; }
+        float: left; }
       #mainPage #containerWrapper #container1 #logoRow1 #socialMedia {
         width: 35%;
         float: right;
         padding-left: 4%;
-        margin-top: 10px;
-        background-color: red; }
+        margin-top: 10px; }
         #mainPage #containerWrapper #container1 #logoRow1 #socialMedia ul {
           padding-left: 0; }
         #mainPage #containerWrapper #container1 #logoRow1 #socialMedia li {
@@ -118,13 +116,6 @@ img {
       background-color: #FFFFFF; }
       #mainPage #containerWrapper #container1 #updateInfoRow3:last-child {
         margin-right: 0; }
-      #mainPage #containerWrapper #container1 #updateInfoRow3 hr {
-        border: 0;
-        height: 0;
-        border-top: 1px solid rgba(0, 0, 0, 0.1); }
-      #mainPage #containerWrapper #container1 #updateInfoRow3 #latestNews {
-        padding-left: 0;
-        color: #828282; }
       #mainPage #containerWrapper #container1 #updateInfoRow3 .glance {
         float: left;
         display: block;
@@ -135,36 +126,40 @@ img {
         background-color: #E1E1E1;
         padding-left: 2%;
         padding-right: 2%;
-<<<<<<< HEAD
-=======
         height: 250px;
         overflow: hidden;
->>>>>>> master
         display: inline-block; }
         #mainPage #containerWrapper #container1 #updateInfoRow3 .glance:last-child {
           margin-right: 0; }
-        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .heading {
-          padding-left: 3%;
-          font-size: 1.5em;
-          color: #535353; }
-        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .data1 {
-          height: 225px; }
-        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #content {
-          width: 100%;
-          height: 20px; }
-        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #nh1 {
-          display: inline-block;
-          padding: 0;
-          margin: 0;
-          padding-left: 3%;
-          padding-bottom: 10px;
-          margin-right: 120px;
-          color: #535353; }
-        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #nh2 {
-          padding-right: 2%;
-          margin-left: 20px;
-          display: inline-block;
-          color: #535353; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance hr {
+          border: 0;
+          height: 0;
+          border-top: 1px solid rgba(0, 0, 0, 0.1); }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #latestNews {
+          padding-left: 0;
+          color: #828282; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #latestNews .heading {
+            padding-left: 3%;
+            font-size: 1.5em;
+            color: #535353; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #latestNews .data1 {
+            height: 225px; }
+            #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #latestNews .data1 .content {
+              width: 100%;
+              height: 20px; }
+              #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #latestNews .data1 .content #nh1 {
+                display: inline;
+                padding: 0;
+                margin: 0;
+                padding-left: 3%;
+                padding-bottom: 10px;
+                color: #535353;
+                float: left; }
+              #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #latestNews .data1 .content #nh2 {
+                padding-right: 2%;
+                display: inline;
+                color: #535353;
+                float: right; }
         #mainPage #containerWrapper #container1 #updateInfoRow3 .glance p {
           padding-left: 3%;
           margin-top: 5px; }
