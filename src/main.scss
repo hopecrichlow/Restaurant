@@ -75,18 +75,23 @@ img {
 
 
   #container1 {
-    
+
 //------------------------------------------
     #logoRow1 {
-      background-color: grey;
+      // background-color: grey;
       padding: 2%;
       overflow: hidden;
+      height: 117px;
      
-
       #logo {
-        width: 25%;
-        padding: 2%;
         float: left;
+
+          img{
+              max-width: 100%;
+              height: 115px;
+              float: left;
+              padding-left: 5%;
+          }
         } //end of logo
 
 
@@ -94,6 +99,7 @@ img {
         width: 35%;
         float: right;
         padding-left: 4%;
+        padding-top: 20px;
         margin-top: 10px;
     
         ul{
@@ -102,6 +108,7 @@ img {
 
         li{
              display: inline-block;
+             margin-right: 10%;
           }
          #fb{
              content: "";
@@ -201,12 +208,12 @@ img {
             margin:0;
             padding-left: 3%;
             padding-bottom: 10px;
-            margin-right: 120px;
+            margin-right: 85px;
             color:$row3FontColor;
           }
           #nh2{
             padding-right:2%;
-            margin-left:20px;
+            margin-left:0px;
             display: inline-block;
             color: $row3FontColor;
           }
@@ -249,7 +256,7 @@ img {
     display: inline-block;
     //width:60% !important;
     padding:0;
-    margin:20px 0 10px 2px !important;
+    margin:2px 0 2px 2px !important;
     padding-left: 3%;
     box-sizing:border-box;
     font-weight: normal;
@@ -270,8 +277,11 @@ img {
   font-weight:normal;
   margin: 0;
   padding-bottom:10px;
+  //white-space: nowrap;
+  text-overflow:ellipsis;
+  overflow: hidden;
  }
-  
+
          #map.glance { 
           overflow: hidden;
           height:250px;
@@ -291,13 +301,13 @@ img {
     } //end of Row3
 
     #address{
-              margin: 15px 15px;
+              margin: 5px 10px;
               font-weight:normal;
 
               } // end of  address id
 
               #num-map{
-                margin: 0px 15px 15px 15px;
+                margin: 0px 10px;
                 font-weight:normal;
               }
 
