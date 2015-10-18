@@ -15,6 +15,8 @@ a {
   text-decoration: none;
   margin: 0;
   padding: 0; }
+  a:visited {
+    color: white; }
 
 ul, li {
   list-style: none;
@@ -37,7 +39,7 @@ img {
   #asideNav {
     float: none;
     position: inherit;
-    font-size: 1.25em; }
+    font-size: 1.2em; }
     #asideNav #fixed {
       margin: auto;
       text-align: center; }
@@ -118,18 +120,100 @@ img {
         background-color: #FFFFFF; }
         #mainPage #containerWrapper #container1 #updateInfoRow3:last-child {
           margin-right: 0; }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 hr {
+          border: 0;
+          height: 0;
+          border-top: 1px solid rgba(0, 0, 0, 0.1); }
+        #mainPage #containerWrapper #container1 #updateInfoRow3 #latestNews {
+          padding-left: 0;
+          color: #828282; }
         #mainPage #containerWrapper #container1 #updateInfoRow3 .glance {
           float: left;
           display: block;
           margin-right: 2.35765%;
           width: 31.76157%;
           border: 1px solid #B3B3B3;
+          color: #535353;
           background-color: #E1E1E1;
-          padding: 2%; }
+          padding-left: 2%;
+          padding-right: 2%;
+          display: inline-block; }
           #mainPage #containerWrapper #container1 #updateInfoRow3 .glance:last-child {
             margin-right: 0; }
-          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #todaySpecial {
-            margin-right: 0; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .heading {
+            padding-left: 3%;
+            font-size: 1.5em;
+            color: #535353; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .data1 {
+            height: 225px; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #content {
+            width: 100%;
+            height: 20px; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #nh1 {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            padding-left: 3%;
+            padding-bottom: 10px;
+            margin-right: 120px;
+            color: #535353; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #nh2 {
+            padding-right: 2%;
+            margin-left: 20px;
+            display: inline-block;
+            color: #535353; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance p {
+            padding-left: 3%;
+            margin-top: 5px; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .spec-img {
+            width: 100%;
+            height: 150px;
+            overflow: hidden; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .sp-img {
+            width: 100%;
+            overflow: hidden;
+            height: 150px; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .todaySpecial {
+            margin-right: 0;
+            width: 100%;
+            display: inline-block;
+            margin: 0 0 0 0 !important;
+            font-weight: normal;
+            color: #535353; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .item_id1 {
+            display: inline-block;
+            padding: 0;
+            margin: 20px 0 10px 2px !important;
+            padding-left: 3%;
+            box-sizing: border-box;
+            font-weight: normal; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .item_id2 {
+            display: inline-block;
+            box-sizing: border-box;
+            margin: 0 0 0 0  !important;
+            right: 10px !important;
+            bottom: 20px !important;
+            font-weight: normal; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance .item_id3 {
+            display: inline-block;
+            padding-left: 3%;
+            font-weight: normal;
+            margin: 0;
+            padding-bottom: 10px; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map.glance {
+            overflow: hidden;
+            height: 250px; }
+            #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map.glance .embed {
+              border: 1px solid black;
+              margin-top: 10px; }
+          #mainPage #containerWrapper #container1 #updateInfoRow3 .glance #map {
+            height: 307px; }
+      #mainPage #containerWrapper #container1 #address {
+        margin: 15px 15px;
+        font-weight: normal; }
+      #mainPage #containerWrapper #container1 #num-map {
+        margin: 0px 15px 15px 15px;
+        font-weight: normal; }
     #mainPage #containerWrapper #container2 {
       clear: both;
       background-color: #FFFFFF;
@@ -146,7 +230,8 @@ img {
         #mainPage #containerWrapper #container2 #dynamicContent:last-child {
           margin-right: 0; }
         #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper {
-          width: 100%; }
+          width: 100%;
+          background-color: green; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabs li {
             background: none;
             background-color: pink;
@@ -161,6 +246,14 @@ img {
             padding: 15px; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabContent.open {
             display: block; }
+          #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form {
+            display: block; }
+            #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form label {
+              display: block; }
+              #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form label input {
+                display: block; }
+              #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form label button {
+                display: block; }
       #mainPage #containerWrapper #container2 #foodPhotosContainer {
         float: left;
         display: block;
@@ -171,21 +264,21 @@ img {
         float: right; }
         #mainPage #containerWrapper #container2 #foodPhotosContainer:last-child {
           margin-right: 0; }
-      #mainPage #containerWrapper #container2 .foodPhotos {
-        float: left;
-        display: block;
-        margin-right: 7.42297%;
-        width: 100%;
-        border: 1px solid #B3B3B3;
-        height: 280px;
-        background-color: #F7F7F7;
-        margin: 0 0 40px 0; }
-        #mainPage #containerWrapper #container2 .foodPhotos:last-child {
-          margin-right: 0; }
-        #mainPage #containerWrapper #container2 .foodPhotos:nth-child(1n) {
-          margin-right: 0; }
-        #mainPage #containerWrapper #container2 .foodPhotos:nth-child(1n+1) {
-          clear: left; }
+        #mainPage #containerWrapper #container2 #foodPhotosContainer .foodPhotos {
+          float: left;
+          display: block;
+          margin-right: 7.42297%;
+          width: 100%;
+          border: 1px solid #B3B3B3;
+          height: 280px;
+          background-color: #F7F7F7;
+          margin: 0 0 40px 0; }
+          #mainPage #containerWrapper #container2 #foodPhotosContainer .foodPhotos:last-child {
+            margin-right: 0; }
+          #mainPage #containerWrapper #container2 #foodPhotosContainer .foodPhotos:nth-child(1n) {
+            margin-right: 0; }
+          #mainPage #containerWrapper #container2 #foodPhotosContainer .foodPhotos:nth-child(1n+1) {
+            clear: left; }
     #mainPage #containerWrapper footer {
       clear: both;
       background-color: #FFFFFF;
@@ -194,3 +287,29 @@ img {
       width: 100%;
       height: 90px;
       font-size: 1em; }
+
+#pageWrapper {
+  background-color: black; }
+  #pageWrapper #enterTitle {
+    margin: 0 auto;
+    padding: 50px;
+    width: 60%;
+    font-size: 4em;
+    color: white; }
+  #pageWrapper #enterSlide {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    padding: 10px; }
+    #pageWrapper #enterSlide #firstImage {
+      width: 60%;
+      margin: 0 auto; }
+    #pageWrapper #enterSlide .slideImage {
+      margin: 0 auto;
+      background-color: pink; }
+      #pageWrapper #enterSlide .slideImage img {
+        position: absolute;
+        left: 20%;
+        width: 60%;
+        height: 400px; }

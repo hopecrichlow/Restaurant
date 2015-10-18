@@ -45,13 +45,35 @@
 <!-- ...............................................     -->
     <div id="updateInfoRow3">
       <div id="latestNews" class="glance">
+
       </div> <!-- end of latestNews -->
 
-      <div id="todaySpecial" class="glance">
+      <div class="glance">
+          <h3 class='heading'> Todays Special </h3>
+          <hr>
+          <div class="spec-img">
+             <img class="sp-img" src="images/5631161270_895542151d_m.jpg">
+          </div>
+          <div id="todaySpecial">
+
+          </div>
       </div> <!-- end of todaySpecial -->
 
       <div id="map" class="glance">
-      </div> <!-- end of MAP -->
+          <h3 class="heading">Our Location</h3>
+          <hr>
+          <div class="embed">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.981567439677!2d-73.833826985452!3d40.76243014246729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2600f8d12ca3f%3A0x58028dbefe09b3a7!2s123+Main+St%2C+Flushing%2C+NY+11354!5e0!3m2!1sen!2sus!4v1444999615268" width="290" height="150" frameborder="0" style="border:0" allowfullscreen> 
+            </iframe>
+          </div> <!--end of embedded map  -->
+
+          <div class="info">
+            <h3 id="address">123 Main St, Flushing, NY, 11354</h3>
+            <h3 id="num-map"> &bull;  210-755-6161 &bull;  Map  &bull; Direction</h3>
+          </div>  <!--end of info -->
+         
+
+   </div> <!-- end of MAP -->
 
     </div> <!-- end of updateInfoRow -->
 <!-- ...............................................     -->    
@@ -75,7 +97,25 @@
          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
       </div>
       <div id="tab3" class="tabContent">
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+        <form>
+          <label>Full Name
+          <input type="text"></label>
+          <label>Number of Guest
+          <input type="text">
+          <label>Date</label>
+          <input type="text">
+          <label>Special Notes</label>
+          <input type="text">
+          <label>Seating Preference</label>
+          <select>Indoor
+            <option>Indoor</option>
+            <option>Ocean View</option>
+            <option>Kabbana</option>
+            <option>at the bar</option>
+           </select> 
+
+          <button>Reserve Table</button>
+        </form>
       </div>
 
     </div> <!-- end of tabWrapper -->
@@ -83,11 +123,7 @@
    </div> <!-- end of dynamicContent -->
 
    <div id="foodPhotosContainer">
-     <div class="foodPhotos" id="foodPhoto01"></div>
-     <div class="foodPhotos" id="foodPhoto01"></div>
-     <div class="foodPhotos" id="foodPhoto01"></div>
-     <div class="foodPhotos" id="foodPhoto01"></div>
-     <div class="foodPhotos" id="foodPhoto01"></div>
+    
 
    </div> <!-- end of foodPhotosContainer -->
   </div> <!-- end of container2 -->
