@@ -2,25 +2,32 @@
 @import'neat/neat';
 
 //Variables
-$mainBackgroundColor: #FFFFFF;
+
+$mainBackgroundColor: #D6FFF2;
+$pink: #DA6CDF;
+$accentColor: #ADEDDE;
+$selectedContent: #BCF8EC;
+$shadowColor: #93B7BC;
+$navColor: $shadowColor;
+$glanceColor: $shadowColor;
 $dividingBorder: 2px solid #D0D0D0;
 $mainBorder: 1px solid #B3B3B3;
+$contentWidth: 1100px;
 $row3FontColor:#535353;
 
 body {
+  margin: 5px;
+  width: 100%;
+  background: $mainBackgroundColor;
   font-family: serif;
   position: relative;
   font-size: 62.5%;
+
 } 
 a { 
   text-decoration: none;
   margin: 0;
   padding: 0;
-
-  &:visited {
-    color: black;
-
-  }
 } 
 ul, li{
   list-style: none;
@@ -30,6 +37,7 @@ ul, li{
 img {
   max-width: 100%;
 }
+
 #asideNav {
   float: left;
   position: fixed;
@@ -38,10 +46,8 @@ img {
       
     li {
       padding: 0 0 1em 0;
-      font-size: 2em;
-      a:link {
-        color: black;
-      }
+      font-size: 1.4em;
+      color: $navColor;
     }
   }
 }
@@ -50,7 +56,11 @@ img {
   #asideNav {
     float: none;
     position: inherit;
+    margin: auto;
+    max-width: $contentWidth;
+    background: $mainBackgroundColor;
     font-size: 1.2em;
+
     #fixed {
       margin: auto;
       text-align: center;
@@ -65,7 +75,7 @@ img {
 
 #mainPage {
   @include outer-container;
-  max-width: 1100px;
+  max-width: $contentWidth;
   background-color: $mainBackgroundColor;
 
 
@@ -78,7 +88,7 @@ img {
 
 //------------------------------------------
     #logoRow1 {
-      // background-color: grey;
+      background-color: $mainBackgroundColor;
       padding: 2%;
       overflow: hidden;
       height: 117px;
@@ -108,7 +118,8 @@ img {
 
         li{
              display: inline-block;
-             margin-right: 10%;
+             margin-left: 10%;
+             float: right;
           }
          #fb{
              content: "";
@@ -143,7 +154,7 @@ img {
     #imgRow2{
     height:350px;
     width:100%;
-    margin-bottom :10px;
+    margin-bottom: 2%;
 
   img{
     width: 1200px;
@@ -154,8 +165,7 @@ img {
   
 
 //------------------------------------------
-
-    #updateInfoRow3 {
+#updateInfoRow3 {
         @include span-columns(12);
         background-color: $mainBackgroundColor;
 
@@ -232,9 +242,7 @@ img {
               }
             }
 
-          } //end .data1
-      
-       
+          } //end .data1 
 
           p{
             padding-left: 3%;
@@ -272,12 +280,7 @@ img {
             width: 60%;
 
             .item_id1 {
-                // display: inline-block;
-                // padding:0;
-                // margin:20px 0 5px 2px !important;
-                // padding-left: 3%;
-                // box-sizing:border-box;
-                // font-weight: normal;
+            
                }
            }
 
@@ -286,12 +289,7 @@ img {
             width: 8%;
 
             .item_id2 {
-             // display: inline-block;
-             // box-sizing:border-box;
-             // margin:0 0 0 0  !important;
-             // right: 10px !important;
-             // bottom: 20px !important;
-             // font-weight:normal;
+          
              }
           }
 
@@ -317,16 +315,7 @@ img {
           height:307px;
 
         } //end of map
-        // #red {
-        //   background-color: #E1E1E1;
-        //   width: 88%;
-        //   height: 155px;
-        //   top: 15%;
-        //   left: 5%;
-        //   position: absolute;
-        //   opacity: .3;
-
-        // }
+      
       } //end of .glance
       
     } //end of Row3
@@ -348,16 +337,15 @@ img {
 
               }
 
+    
   } //end of container1
 //------------------------------------------
 
   #container2 {
     clear: both;
     @include span-columns(12);
-    
     background-color: $mainBackgroundColor;
-    margin: 10% 0;
-    // padding: 20px 0;
+    margin: 1% 0;
     overflow: hidden;
    
 
@@ -365,17 +353,21 @@ img {
     #dynamicContent {
       @include span-columns(9);
       @include omega();
+      margin: 5% 0;
       height: 1200px;
       float: left;
 
       .tabWrapper {
         width: 100%;
-        background-color: green;
+        background-color: $mainBackgroundColor;
       
 
         .tabs li {
-          background: none;
-          background-color: pink;
+          border: 1px solid $selectedContent;
+          border-radius: 3px 3px 0 0;
+          border-bottom: none;
+          background: $shadowColor;
+          color: $selectedContent;
           display: inline-block;
           padding: 10px 15px;
           cursor: pointer;
@@ -383,18 +375,87 @@ img {
         }
 
         .tabs li.open {
-          background: white;
-         
+          color: $pink;
+          background: $selectedContent;
+          border-radius: 3px 3px 0 3px;
         }
         .tabContent {
           display: none;
-          background: white;
+          color: $pink;
+          border-radius: 3px;
+          background: $selectedContent;
           padding: 15px;
         }
 
         .tabContent.open {
           display: block;
+          border-radius: 0 3px 3px 3px;
+         
         }
+
+
+        // ============MotherEffing Menu {o_0}========================================
+
+        #tab2{
+         font-size: 1.6em;
+
+         ul.ellipsis {
+            max-width: 100%;
+            margin-right: 0;
+            padding: 0;
+            overflow-x: hidden;
+            list-style: none;
+            line-height: 30px;
+
+          }
+
+        ul.ellipsis li:after{
+            float: left;
+            width: 0;
+            white-space: nowrap;
+            content:  ". . . . . . . . . . . . . . . . . . . . "
+                       ". . . . . . . . . . . . . . . . . . . . "
+                       ". . . . . . . . . . . . . . . . . . . . "
+                       ". . . . . . . . . . . . . . . . . .  "
+                       ". . . . . . . . " }
+
+        ul.ellipsis span:first-child {
+            background: white}
+
+        ul.ellipsis span + span {
+            float: right;
+            background: white }
+
+        .foodPrice{
+          float: right;
+        }
+
+        .foodItem{
+          font-weight: bold;
+        }
+
+             .item{
+              font-weight: bold;
+              width: 60%;
+             }
+
+             .description{
+              width: 75%;
+              font-style: italic;
+             }
+
+            .item, .price{
+              display: inline-block;
+            }
+
+            .price{
+              float: right;
+              width: 10%;
+        
+            }
+
+   }  
+// ==============        
         #tab3 {
           form { 
             display: block;
@@ -481,7 +542,11 @@ img {
 
 // enterSlide Website Landing Page
 #pageWrapper { 
-  background-color: black;
+
+  background: $mainBackgroundColor;
+    a:visited {
+    color: #F366F3;
+  }
 
   #enterTitle {
     margin: 0 auto;
@@ -490,6 +555,7 @@ img {
     width: 60%;
     font-size: 4em;
     color: white;
+  
   }
   #enterSlide { 
       // background-color: blue;

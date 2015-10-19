@@ -24,7 +24,7 @@ var newsTemplate=`
   </div>
 </div>`;
 $('#latestNews').append(newsTemplate);  
-// ***********APPEND to HTML
+//***********APPEND to HTML
   });
 })(); //end of IIFE01
 
@@ -125,7 +125,7 @@ for (var i=0;i<temp.length; i++){
 (function(){//IFFE04
 
 //flickr API
-var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=365dccc5a182acbc32b9f3b607f26f73&tags=thomas+keller+food+porn&format=json&nojsoncallback=1";
+var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=365dccc5a182acbc32b9f3b607f26f73&tags=thomas+keller+food&format=json&nojsoncallback=1";
 
 //AJAX Call
 var promise = $.getJSON(url);
@@ -205,3 +205,60 @@ var promise = $.getJSON(url);
   }); //end of AJAX Call 
 
 })(); //end of IIFE05
+
+// IIFEMenu
+
+(function(){
+let url = 'https://json-data.herokuapp.com/restaurant/menu/1';
+  // Go fetch our data and do something with it
+  let promise = $.getJSON(url);
+  promise.then( function (response) {
+    display(response);
+    console.log(response);
+  });
+
+// display
+let display = function(obj){
+  console.log(obj.appetizers);
+  _.each(obj.appetizers, function(food){
+
+    if(food.allergies === 1){
+      return `<img src="../images/duck_face.png">`;
+    }
+    var appTemplate = 
+                   `<ul class= ellipsis>
+                    <li><span class="foodItem">${food.item}</span> <span class="foodPrice">${food.price}</span></li>
+                      </ul>
+                    <div class="description">${food.description}</div>
+                    `;
+
+  $('.apps').append(appTemplate);
+
+  });
+
+  _.each(obj.entrees, function(food){
+    console.log(obj.entrees);
+    var entreeTemplate = `<ul class= ellipsis>
+                    <li><span class="foodItem">${food.item}</span> <span class="foodPrice">${food.price}</span></li>
+                      </ul>
+                    <div class="description">${food.description}</div>
+                    `;
+  $('.entrees').append(entreeTemplate);
+
+  });
+
+  _.each(obj.sides, function(food){
+    console.log(obj.sides);
+    var sidesTemplate = `<ul class= ellipsis>
+                    <li><span class="foodItem">${food.item}</span> <span class="foodPrice">${food.price}</span></li>
+                      </ul>
+                    <div class="description">${food.description}</div>
+                    `;
+  $('.sides').append(sidesTemplate);
+
+ });
+
+};
+
+
+})(); //end of IIFEMenu

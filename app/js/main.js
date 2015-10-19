@@ -15,7 +15,7 @@
     // ********TEMPLATE FOR NEWS*************
     var newsTemplate = "\n\n<div class=\"data1\">\n  <div class=\"content1\">\n      <h3 id=\"nh1\">" + newsobject.title + " </h3>\n  </div>   \n  <div class=\"content2\">\n      <h3  id=\"nh2\">" + newsobject.date_published + "</h3>\n  </div> \n  <div class=\"content3\">\n  <h4 id=\"nh3\"> " + newsobject.post + " </h4>\n  </div>\n</div>";
     $('#latestNews').append(newsTemplate);
-    // ***********APPEND to HTML
+    //***********APPEND to HTML
   });
 })(); //end of IIFE01
 
@@ -104,7 +104,7 @@
   //IFFE04
 
   //flickr API
-  var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=365dccc5a182acbc32b9f3b607f26f73&tags=thomas+keller+food+porn&format=json&nojsoncallback=1";
+  var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=365dccc5a182acbc32b9f3b607f26f73&tags=thomas+keller+food&format=json&nojsoncallback=1";
 
   //AJAX Call
   var promise = $.getJSON(url);
@@ -171,3 +171,41 @@
     }); //end of _.each
   }); //end of AJAX Call
 })(); //end of IIFE05
+
+// IIFEMenu
+
+(function () {
+  var url = 'https://json-data.herokuapp.com/restaurant/menu/1';
+  // Go fetch our data and do something with it
+  var promise = $.getJSON(url);
+  promise.then(function (response) {
+    display(response);
+    console.log(response);
+  });
+
+  // display
+  var display = function display(obj) {
+    console.log(obj.appetizers);
+    _.each(obj.appetizers, function (food) {
+
+      if (food.allergies === 1) {
+        return "<img src=\"../images/duck_face.png\">";
+      }
+      var appTemplate = "<ul class= ellipsis>\n                    <li><span class=\"foodItem\">" + food.item + "</span> <span class=\"foodPrice\">" + food.price + "</span></li>\n                      </ul>\n                    <div class=\"description\">" + food.description + "</div>\n                    ";
+
+      $('.apps').append(appTemplate);
+    });
+
+    _.each(obj.entrees, function (food) {
+      console.log(obj.entrees);
+      var entreeTemplate = "<ul class= ellipsis>\n                    <li><span class=\"foodItem\">" + food.item + "</span> <span class=\"foodPrice\">" + food.price + "</span></li>\n                      </ul>\n                    <div class=\"description\">" + food.description + "</div>\n                    ";
+      $('.entrees').append(entreeTemplate);
+    });
+
+    _.each(obj.sides, function (food) {
+      console.log(obj.sides);
+      var sidesTemplate = "<ul class= ellipsis>\n                    <li><span class=\"foodItem\">" + food.item + "</span> <span class=\"foodPrice\">" + food.price + "</span></li>\n                      </ul>\n                    <div class=\"description\">" + food.description + "</div>\n                    ";
+      $('.sides').append(sidesTemplate);
+    });
+  };
+})(); //end of IIFEMenu
