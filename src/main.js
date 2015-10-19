@@ -174,6 +174,68 @@ var promise = $.getJSON(url);
     $('#foodPhotosContainer').append(foodPhoto);
     }); //end of _.each
   }); //end of AJAX Call 
-
 })(); //end of IIFE05
 
+
+
+
+// IIFEMenu
+
+(function(){
+let url = 'https://json-data.herokuapp.com/restaurant/menu/1';
+  // Go fetch our data and do something with it
+  let promise = $.getJSON(url);
+  promise.then( function (response) {
+    display(response);
+    console.log(response);
+  });
+
+// display
+let display = function(obj){
+  console.log(obj.appetizers);
+  _.each(obj.appetizers, function(food){
+
+    if(food.allergies === 1){
+      return `<img src="../images/duck_face.png">`;
+    }
+    var appTemplate = 
+                    `
+                    <div class="item">${food.item}</div>
+                    <div class="price">${food.price}</div>
+                    <div class="description">${food.description}</div>
+                    <div class="details"> ${food.allergies} ${food.favorite} ${food.spicy} ${food.vegan} </div>
+                    `;
+
+  $('.apps').append(appTemplate);
+
+  });
+
+  _.each(obj.entrees, function(food){
+    console.log(obj.entrees);
+    var entreeTemplate = `
+                    <div class="item">${food.item}</div>
+                    <div class="price">${food.price}</div>
+                    <div class="description">${food.description}</div>
+                    <div class="details"> ${food.allergies} ${food.favorite} ${food.spicy} ${food.vegan} </div>
+                    `;
+  $('.entrees').append(entreeTemplate);
+
+  });
+
+  _.each(obj.sides, function(food){
+    console.log(obj.sides);
+    var sidesTemplate = `
+                    <div class="item">${food.item}</div>
+                    <div class="price">${food.price}</div>
+                    </div>
+                    <div class="description">${food.description}</div>
+                    <div class="details"> ${food.allergies} ${food.favorite} ${food.spicy} ${food.vegan} </div>
+                    `;
+  $('.sides').append(sidesTemplate);
+
+ });
+
+};
+
+
+})(); //end of IIFEMenu

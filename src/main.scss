@@ -356,6 +356,29 @@ img {
         .tabContent.open {
           display: block;
         }
+// ====================================================
+
+        #tab2{
+         font-size: 1.6em;
+
+         .item{
+          font-weight: bold;
+         }
+
+         .description{
+          width: 90%;
+         }
+
+        .item, .price{
+          display: inline-block;
+        }
+
+        .price{
+          float: right;
+        }
+
+   }  
+// =====================================================
         #tab3 {
           form { 
             display: block;

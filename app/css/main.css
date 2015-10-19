@@ -256,6 +256,16 @@ img {
             padding: 15px; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabContent.open {
             display: block; }
+          #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 {
+            font-size: 1.6em; }
+            #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 .item {
+              font-weight: bold; }
+            #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 .description {
+              width: 90%; }
+            #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 .item, #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 .price {
+              display: inline-block; }
+            #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 .price {
+              float: right; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form {
             display: block;
             font-size: 2em;

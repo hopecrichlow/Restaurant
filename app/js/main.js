@@ -86,7 +86,7 @@
   //IFFE04
 
   //flickr API
-  var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=365dccc5a182acbc32b9f3b607f26f73&tags=thomas+keller+food&format=json&nojsoncallback=1";
+  var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=365dccc5a182acbc32b9f3b607f26f73&tags=thomas+keller+food+porn&format=json&nojsoncallback=1";
 
   //AJAX Call
   var promise = $.getJSON(url);
@@ -153,3 +153,41 @@
     }); //end of _.each
   }); //end of AJAX Call
 })(); //end of IIFE05
+
+// IIFEMenu
+
+(function () {
+  var url = 'https://json-data.herokuapp.com/restaurant/menu/1';
+  // Go fetch our data and do something with it
+  var promise = $.getJSON(url);
+  promise.then(function (response) {
+    display(response);
+    console.log(response);
+  });
+
+  // display
+  var display = function display(obj) {
+    console.log(obj.appetizers);
+    _.each(obj.appetizers, function (food) {
+
+      if (food.allergies === 1) {
+        return "<img src=\"../images/duck_face.png\">";
+      }
+      var appTemplate = "\n                    <div class=\"item\">" + food.item + "</div>\n                    <div class=\"price\">" + food.price + "</div>\n                    <div class=\"description\">" + food.description + "</div>\n                    <div class=\"details\"> " + food.allergies + " " + food.favorite + " " + food.spicy + " " + food.vegan + " </div>\n                    ";
+
+      $('.apps').append(appTemplate);
+    });
+
+    _.each(obj.entrees, function (food) {
+      console.log(obj.entrees);
+      var entreeTemplate = "\n                    <div class=\"item\">" + food.item + "</div>\n                    <div class=\"price\">" + food.price + "</div>\n                    <div class=\"description\">" + food.description + "</div>\n                    <div class=\"details\"> " + food.allergies + " " + food.favorite + " " + food.spicy + " " + food.vegan + " </div>\n                    ";
+      $('.entrees').append(entreeTemplate);
+    });
+
+    _.each(obj.sides, function (food) {
+      console.log(obj.sides);
+      var sidesTemplate = "\n                    <div class=\"item\">" + food.item + "</div>\n                    <div class=\"price\">" + food.price + "</div>\n                    </div>\n                    <div class=\"description\">" + food.description + "</div>\n                    <div class=\"details\"> " + food.allergies + " " + food.favorite + " " + food.spicy + " " + food.vegan + " </div>\n                    ";
+      $('.sides').append(sidesTemplate);
+    });
+  };
+})(); //end of IIFEMenu
