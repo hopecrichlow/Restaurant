@@ -162,7 +162,7 @@ var promise = $.getJSON(url);
     var images = _.first(obj.photos.photo, [4]);
 
      _.each(images, function(image){
-      console.log(image);
+      //console.log(image);
 //build a URL according to the API manual
        var flickrURL = "http://farm"+image.farm+".static.flickr.com/"+image.server+"/"+image.id+"_"+image.secret+".jpg";
 //build a TEMPLATE to insert into the HTML
@@ -170,12 +170,11 @@ var promise = $.getJSON(url);
     <div class="foodPhotos">
     <img src="${ flickrURL }" />
     </div>`;
-    // console.dir(slideshow);
+    console.dir(slideshow);
     $('#foodPhotosContainer').append(foodPhoto);
     }); //end of _.each
   }); //end of AJAX Call 
 })(); //end of IIFE05
-
 
 
 
@@ -235,3 +234,5 @@ let display = function(obj){
 
 
 })(); //end of IIFEMenu
+// -----------------------------------------------
+
