@@ -7,6 +7,9 @@ html {
   box-sizing: inherit; }
 
 body {
+  margin: 5px;
+  width: 100%;
+  background: #D5FFF3;
   font-family: serif;
   position: relative;
   font-size: 62.5%; }
@@ -15,8 +18,6 @@ a {
   text-decoration: none;
   margin: 0;
   padding: 0; }
-  a:visited {
-    color: black; }
 
 ul, li {
   list-style: none;
@@ -31,14 +32,16 @@ img {
   position: fixed; }
   #asideNav #fixed li {
     padding: 0 0 1em 0;
-    font-size: 2em; }
-    #asideNav #fixed li a:link {
-      color: black; }
+    font-size: 2em;
+    color: #93B7BC; }
 
 @media screen and (max-width: 1250px) {
   #asideNav {
     float: none;
     position: inherit;
+    margin: auto;
+    max-width: 1100px;
+    background: #D5FFF3;
     font-size: 1.2em; }
     #asideNav #fixed {
       margin: auto;
@@ -53,7 +56,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   max-width: 1100px;
-  background-color: #FFFFFF; }
+  background-color: #D5FFF3; }
   #mainPage::after {
     clear: both;
     content: "";
@@ -63,10 +66,11 @@ img {
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    background-color: #FFFFFF; }
+    background-color: #D5FFF3; }
     #mainPage #containerWrapper:last-child {
       margin-right: 0; }
     #mainPage #containerWrapper #container1 #logoRow1 {
+      background-color: #D5FFF3;
       padding: 2%;
       overflow: hidden;
       height: 117px; }
@@ -87,7 +91,8 @@ img {
           padding-left: 0; }
         #mainPage #containerWrapper #container1 #logoRow1 #socialMedia li {
           display: inline-block;
-          margin-right: 10%; }
+          margin-left: 10%;
+          float: right; }
         #mainPage #containerWrapper #container1 #logoRow1 #socialMedia #fb {
           content: "";
           background: url("../images/social_sprite.png") no-repeat -1px -3px;
@@ -109,7 +114,7 @@ img {
     #mainPage #containerWrapper #container1 #imgRow2 {
       height: 350px;
       width: 100%;
-      margin-bottom: 10px; }
+      margin-bottom: 2%; }
       #mainPage #containerWrapper #container1 #imgRow2 img {
         width: 1200px;
         height: 350px; }
@@ -118,7 +123,7 @@ img {
       display: block;
       margin-right: 2.35765%;
       width: 100%;
-      background-color: #FFFFFF; }
+      background-color: #D5FFF3; }
       #mainPage #containerWrapper #container1 #updateInfoRow3:last-child {
         margin-right: 0; }
       #mainPage #containerWrapper #container1 #updateInfoRow3 .glance {
@@ -127,8 +132,9 @@ img {
         margin-right: 2.35765%;
         width: 31.76157%;
         border: 1px solid #B3B3B3;
+        border-radius: 3px;
         color: #535353;
-        background-color: #E1E1E1;
+        background-color: #93B7BC;
         padding-left: 2%;
         padding-right: 2%;
         height: 250px;
@@ -232,8 +238,8 @@ img {
       display: block;
       margin-right: 2.35765%;
       width: 100%;
-      background-color: #FFFFFF;
-      margin: 10% 0;
+      background-color: #D5FFF3;
+      margin: 1% 0;
       overflow: hidden; }
       #mainPage #containerWrapper #container2:last-child {
         margin-right: 0; }
@@ -243,28 +249,37 @@ img {
         margin-right: 2.35765%;
         width: 74.41059%;
         margin-right: 0;
+        margin: 5% 0;
         height: 1200px;
         float: left; }
         #mainPage #containerWrapper #container2 #dynamicContent:last-child {
           margin-right: 0; }
         #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper {
           width: 100%;
-          background-color: green; }
+          background-color: #D5FFF3; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabs li {
-            background: none;
-            background-color: pink;
+            border: 1px solid #BCF8EC;
+            border-radius: 3px 3px 0 0;
+            border-bottom: none;
+            background: #93B7BC;
+            color: #BCF8EC;
             display: inline-block;
             padding: 10px 15px;
             cursor: pointer;
             font-size: 1.5em; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabs li.open {
-            background: white; }
+            color: #DA6CDF;
+            background: #BCF8EC;
+            border-radius: 3px 3px 0 3px; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabContent {
             display: none;
-            background: white;
+            color: #DA6CDF;
+            border-radius: 3px;
+            background: #BCF8EC;
             padding: 15px; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabContent.open {
-            display: block; }
+            display: block;
+            border-radius: 0 3px 3px 3px; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form {
             display: block;
             font-size: 2em;
@@ -289,7 +304,7 @@ img {
         margin-right: 2.35765%;
         width: 23.23176%;
         margin-right: 0;
-        background-color: #FFFFFF;
+        background-color: #D5FFF3;
         float: right; }
         #mainPage #containerWrapper #container2 #foodPhotosContainer:last-child {
           margin-right: 0; }
@@ -315,7 +330,7 @@ img {
             height: 240px; }
     #mainPage #containerWrapper footer {
       clear: both;
-      background-color: #FFFFFF;
+      background-color: #D5FFF3;
       border-top: 2px solid #D0D0D0;
       padding-top: 25px;
       width: 100%;

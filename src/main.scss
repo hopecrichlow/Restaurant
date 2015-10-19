@@ -2,12 +2,23 @@
 @import'neat/neat';
 
 //Variables
-$mainBackgroundColor: #FFFFFF;
+
+$mainBackgroundColor: #D5FFF3;
+$pink: #DA6CDF;
+$accentColor: #ADEDDE;
+$selectedContent: #BCF8EC;
+$shadowColor: #93B7BC;
+$navColor: $shadowColor;
+$glanceColor: $shadowColor;
 $dividingBorder: 2px solid #D0D0D0;
 $mainBorder: 1px solid #B3B3B3;
+$contentWidth: 1100px;
 $row3FontColor:#535353;
 
 body {
+  margin: 5px;
+  width: 100%;
+  background: $mainBackgroundColor;
   font-family: serif;
   position: relative;
   font-size: 62.5%;
@@ -16,11 +27,6 @@ a {
   text-decoration: none;
   margin: 0;
   padding: 0;
-
-  &:visited {
-    color: black;
-
-  }
 } 
 ul, li{
   list-style: none;
@@ -39,9 +45,7 @@ img {
     li {
       padding: 0 0 1em 0;
       font-size: 2em;
-      a:link {
-        color: black;
-      }
+      color: $navColor;
     }
   }
 }
@@ -50,7 +54,11 @@ img {
   #asideNav {
     float: none;
     position: inherit;
+    margin: auto;
+    max-width: $contentWidth;
+    background: $mainBackgroundColor;
     font-size: 1.2em;
+
     #fixed {
       margin: auto;
       text-align: center;
@@ -65,7 +73,7 @@ img {
 
 #mainPage {
   @include outer-container;
-  max-width: 1100px;
+  max-width: $contentWidth;
   background-color: $mainBackgroundColor;
 
 
@@ -78,7 +86,7 @@ img {
 
 //------------------------------------------
     #logoRow1 {
-      // background-color: grey;
+      background-color: $mainBackgroundColor;
       padding: 2%;
       overflow: hidden;
       height: 117px;
@@ -108,7 +116,8 @@ img {
 
         li{
              display: inline-block;
-             margin-right: 10%;
+             margin-left: 10%;
+             float: right;
           }
          #fb{
              content: "";
@@ -143,7 +152,7 @@ img {
     #imgRow2{
     height:350px;
     width:100%;
-    margin-bottom :10px;
+    margin-bottom: 2%;
 
   img{
     width: 1200px;
@@ -164,8 +173,9 @@ img {
       .glance {
         @include span-columns(4 of 12);
         border: $mainBorder;
-        color:$row3FontColor;
-        background-color: #E1E1E1; 
+        border-radius: 3px;
+        color: $row3FontColor;
+        background-color: $glanceColor; 
         padding-left: 2%;
         padding-right:2%;
         height: 250px;
@@ -280,10 +290,10 @@ img {
  .item_id2{
   display: inline-block;
   box-sizing:border-box;
- margin:0 0 0 0  !important;
- right: 10px !important;
- bottom: 20px !important;
- font-weight:normal;
+  margin:0 0 0 0  !important;
+  right: 10px !important;
+  bottom: 20px !important;
+  font-weight:normal;
  }
 
  .item_id3{
@@ -329,10 +339,8 @@ img {
   #container2 {
     clear: both;
     @include span-columns(12);
-    
     background-color: $mainBackgroundColor;
-    margin: 10% 0;
-    // padding: 20px 0;
+    margin: 1% 0;
     overflow: hidden;
    
 
@@ -340,17 +348,21 @@ img {
     #dynamicContent {
       @include span-columns(9);
       @include omega();
+      margin: 5% 0;
       height: 1200px;
       float: left;
 
       .tabWrapper {
         width: 100%;
-        background-color: green;
+        background-color: $mainBackgroundColor;
       
 
         .tabs li {
-          background: none;
-          background-color: pink;
+          border: 1px solid $selectedContent;
+          border-radius: 3px 3px 0 0;
+          border-bottom: none;
+          background: $shadowColor;
+          color: $selectedContent;
           display: inline-block;
           padding: 10px 15px;
           cursor: pointer;
@@ -358,17 +370,22 @@ img {
         }
 
         .tabs li.open {
-          background: white;
-         
+          color: $pink;
+          background: $selectedContent;
+          border-radius: 3px 3px 0 3px;
         }
         .tabContent {
           display: none;
-          background: white;
+          color: $pink;
+          border-radius: 3px;
+          background: $selectedContent;
           padding: 15px;
         }
 
         .tabContent.open {
           display: block;
+          border-radius: 0 3px 3px 3px;
+         
         }
         #tab3 {
           form { 
