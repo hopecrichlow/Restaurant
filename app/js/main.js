@@ -13,8 +13,9 @@
     console.log(newsobject);
 
     // ********TEMPLATE FOR NEWS*************
-    var newsTemplate = "\n<h3 class='heading'> Latest News</h3>\n<hr>\n<div class=\"data1\">\n  <div class=\"content\">\n      <h3 id=\"nh1\">" + newsobject.title + " </h3>\n      <h3  id=\"nh2\">" + newsobject.date_published + "</h3>\n  </div> //end of content\n  <div id=\"post\"><p> " + newsobject.post + " </p></div>\n</div>";
-    $('#latestNews').append(newsTemplate); // ***********APPEND to HTML
+    var newsTemplate = "\n\n<div class=\"data1\">\n  <div class=\"content1\">\n      <h3 id=\"nh1\">" + newsobject.title + " </h3>\n  </div>   \n  <div class=\"content2\">\n      <h3  id=\"nh2\">" + newsobject.date_published + "</h3>\n  </div> \n  <div class=\"content3\">\n  <h4 id=\"nh3\"> " + newsobject.post + " </h4>\n  </div>\n</div>";
+    $('#latestNews').append(newsTemplate);
+    // ***********APPEND to HTML
   });
 })(); //end of IIFE01
 
@@ -50,7 +51,7 @@
       if (special_ID === temp[i].id) {
         // console.log(temp[i].item);
         // // ********TEMPLATE FOR SPECIAL*************
-        var specialTemplate = "\n      <h3 class=\"item_id1\">" + temp[i].item + "...................................</h3>\n      <h3 class=\"item_id2\">" + temp[i].price + "</h3>\n      <h3 class=\"item_id3\">" + temp[i].description + "</h3>\n      ";
+        var specialTemplate = "\n      <div class=\"left\">\n      <h3 class=\"item_id1\">" + temp[i].item + "</h3>\n      </div>\n      <div class=\"right\">\n      <h3 class=\"item_id2\">" + temp[i].price + "</h3>\n      </div>\n      <h3 class=\"item_id3\">" + temp[i].description + "</h3>\n      ";
         //console.log(temp[i].description)
         $('#todaySpecial').append(specialTemplate); // ***********APPEND to HTML
       } //end of IF

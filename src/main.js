@@ -11,16 +11,20 @@ newsPromise.then(function(newsobject){
 
 // ********TEMPLATE FOR NEWS*************
 var newsTemplate=`
-<h3 class='heading'> Latest News</h3>
-<hr>
+
 <div class="data1">
-  <div class="content">
+  <div class="content1">
       <h3 id="nh1">${newsobject.title} </h3>
+  </div>   
+  <div class="content2">
       <h3  id="nh2">${newsobject.date_published}</h3>
-  </div> //end of content
-  <div id="post"><p> ${newsobject.post} </p></div>
+  </div> 
+  <div class="content3">
+  <h4 id="nh3"> ${newsobject.post} </h4>
+  </div>
 </div>`;
-$('#latestNews').append(newsTemplate);  // ***********APPEND to HTML
+$('#latestNews').append(newsTemplate);  
+// ***********APPEND to HTML
   });
 })(); //end of IIFE01
 
@@ -55,8 +59,12 @@ for (var i=0;i<temp.length; i++){
      // console.log(temp[i].item);
     // // ********TEMPLATE FOR SPECIAL*************
        var specialTemplate=`
-      <h3 class="item_id1">${temp[i].item}...................................</h3>
+      <div class="left">
+      <h3 class="item_id1">${temp[i].item}</h3>
+      </div>
+      <div class="right">
       <h3 class="item_id2">${temp[i].price}</h3>
+      </div>
       <h3 class="item_id3">${temp[i].description}</h3>
       `;
       //console.log(temp[i].description)

@@ -183,55 +183,56 @@ img {
           padding-left:0;
           color: #828282;
 
-          .heading{
+          .heading {
             padding-left:3%;
             font-size:1.5em;
             color:#535353;
           }
+        } //end of #latestNews 
 
           .data1{
             height:225px;
+
             
-            .content{
-              // display: block;
-              width:100%;
-              height :20px;
+            
+            .content1 { 
+              width: 65%;
+              height: 20px;
+              float: left;
 
 
               #nh1{
-                display:inline;
                 padding:0;
                 margin:0;
                 padding-left: 3%;
-                padding-bottom: 10px;
-                // margin-right: 120px;
+                padding-top: 10px;
                 color:$row3FontColor;
-                float: left;
               }
-              #nh2{
-                padding-right:2%;
-                // margin-left:20px;
-                display: inline;
-                color: $row3FontColor;
-                float: right;
-              }
+            }//end of .content1
+            .content2 { 
+              width: 20%;
+              height: 20px;
+              float: right;
 
-            } //end .content
-             #post {
-                width: 250px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                margin: 0 0 2% 0;
-                p {
-                  display: inline;
-                  color: red;
-                }
-              } //end of #post
+              #nh2 {
+                padding:0;
+                margin:0;
+                padding-left: 3%;
+                padding-top: 10px;
+                color:$row3FontColor;
+              }
+            } //end .content2
+            .content3 {
+              margin: 1% 0 0 0;
+              padding: 3%;
+              clear: both;
+              font-size: 1em;
+              line-height: 1.6em;
+            }
 
           } //end .data1
       
-        } //end of #latestNews
+       
 
           p{
             padding-left: 3%;
@@ -241,7 +242,7 @@ img {
             .spec-img{
             //display: inline-block;
             width:100%;
-            height:150px;
+            height:120px;
             //margin-left:40px;
             overflow: hidden;
           }
@@ -251,7 +252,7 @@ img {
          //margin-left:40px;
               width: 100%;
               overflow: hidden;
-              height: 150px;
+              height: 120px;
           }
 
         .todaySpecial {
@@ -264,35 +265,41 @@ img {
          }//end of todaySpeacial
           
 
+          .left {
+            float: left;
+            width: 60%;
 
- 
- .item_id1{
+            .item_id1 {
+                // display: inline-block;
+                // padding:0;
+                // margin:20px 0 5px 2px !important;
+                // padding-left: 3%;
+                // box-sizing:border-box;
+                // font-weight: normal;
+               }
+           }
 
-    display: inline-block;
-    //width:60% !important;
-    padding:0;
-    margin:20px 0 10px 2px !important;
-    padding-left: 3%;
-    box-sizing:border-box;
-    font-weight: normal;
-   }
+          .right {
+            float: right;
+            width: 8%;
 
- .item_id2{
-  display: inline-block;
-  box-sizing:border-box;
- margin:0 0 0 0  !important;
- right: 10px !important;
- bottom: 20px !important;
- font-weight:normal;
- }
+            .item_id2 {
+             // display: inline-block;
+             // box-sizing:border-box;
+             // margin:0 0 0 0  !important;
+             // right: 10px !important;
+             // bottom: 20px !important;
+             // font-weight:normal;
+             }
+          }
 
- .item_id3{
-  display: inline-block;
-  padding-left:3%;
-  font-weight:normal;
-  margin: 0;
-  padding-bottom:10px;
- }
+             .item_id3{
+              display: inline-block;
+              padding-left:3%;
+              font-weight:normal;
+              margin: 0;
+              padding-bottom:10px;
+             }
 
          #map.glance { 
           overflow: hidden;
@@ -313,7 +320,7 @@ img {
     } //end of Row3
 
     #address{
-              margin: 15px 15px;
+              margin: 10px 10px;
               font-weight:normal;
 
               } // end of  address id
