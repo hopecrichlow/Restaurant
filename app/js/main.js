@@ -173,20 +173,20 @@
       if (food.allergies === 1) {
         return "<img src=\"../images/duck_face.png\">";
       }
-      var appTemplate = "\n                    <div class=\"item\">" + food.item + "</div>\n                    <div class=\"price\">" + food.price + "</div>\n                    <div class=\"description\">" + food.description + "</div>\n                    <div class=\"details\"> " + food.allergies + " " + food.favorite + " " + food.spicy + " " + food.vegan + " </div>\n                    ";
+      var appTemplate = "<ul class= ellipsis>\n                    <li><span class=\"foodItem\">" + food.item + "</span> <span class=\"foodPrice\">" + food.price + "</span></li>\n                      </ul>\n                    <div class=\"description\">" + food.description + "</div>\n                    ";
 
       $('.apps').append(appTemplate);
     });
 
     _.each(obj.entrees, function (food) {
       console.log(obj.entrees);
-      var entreeTemplate = "\n                    <div class=\"item\">" + food.item + "</div>\n                    <div class=\"price\">" + food.price + "</div>\n                    <div class=\"description\">" + food.description + "</div>\n                    <div class=\"details\"> " + food.allergies + " " + food.favorite + " " + food.spicy + " " + food.vegan + " </div>\n                    ";
+      var entreeTemplate = "<ul class= ellipsis>\n                    <li><span class=\"foodItem\">" + food.item + "</span> <span class=\"foodPrice\">" + food.price + "</span></li>\n                      </ul>\n                    <div class=\"description\">" + food.description + "</div>\n                    ";
       $('.entrees').append(entreeTemplate);
     });
 
     _.each(obj.sides, function (food) {
       console.log(obj.sides);
-      var sidesTemplate = "\n                    <div class=\"item\">" + food.item + "</div>\n                    <div class=\"price\">" + food.price + "</div>\n                    </div>\n                    <div class=\"description\">" + food.description + "</div>\n                    <div class=\"details\"> " + food.allergies + " " + food.favorite + " " + food.spicy + " " + food.vegan + " </div>\n                    ";
+      var sidesTemplate = "<ul class= ellipsis>\n                    <li><span class=\"foodItem\">" + food.item + "</span> <span class=\"foodPrice\">" + food.price + "</span></li>\n                      </ul>\n                    <div class=\"description\">" + food.description + "</div>\n                    ";
       $('.sides').append(sidesTemplate);
     });
   };

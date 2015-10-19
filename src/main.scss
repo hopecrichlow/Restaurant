@@ -356,26 +356,65 @@ img {
         .tabContent.open {
           display: block;
         }
-// ====================================================
+// ============MotherEffing Menu {o_0}========================================
 
         #tab2{
          font-size: 1.6em;
 
-         .item{
-          font-weight: bold;
-         }
+         ul.ellipsis {
+            max-width: 100%;
+            margin-right: 0;
+            padding: 0;
+            overflow-x: hidden;
+            list-style: none;
+            line-height: 30px;
 
-         .description{
-          width: 90%;
-         }
+          }
 
-        .item, .price{
-          display: inline-block;
-        }
+        ul.ellipsis li:after{
+            float: left;
+            width: 0;
+            white-space: nowrap;
+            content:  ". . . . . . . . . . . . . . . . . . . . "
+                       ". . . . . . . . . . . . . . . . . . . . "
+                       ". . . . . . . . . . . . . . . . . . . . "
+                       ". . . . . . . . . . . . . . . . . .  "
+                       ". . . . . . . . " }
 
-        .price{
+        ul.ellipsis span:first-child {
+            background: white}
+
+        ul.ellipsis span + span {
+            float: right;
+            background: white }
+
+        .foodPrice{
           float: right;
         }
+
+        .foodItem{
+          font-weight: bold;
+        }
+
+             .item{
+              font-weight: bold;
+              width: 60%;
+             }
+
+             .description{
+              width: 75%;
+              font-style: italic;
+             }
+
+            .item, .price{
+              display: inline-block;
+            }
+
+            .price{
+              float: right;
+              width: 10%;
+        
+            }
 
    }  
 // =====================================================

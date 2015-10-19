@@ -199,11 +199,10 @@ let display = function(obj){
       return `<img src="../images/duck_face.png">`;
     }
     var appTemplate = 
-                    `
-                    <div class="item">${food.item}</div>
-                    <div class="price">${food.price}</div>
+                   `<ul class= ellipsis>
+                    <li><span class="foodItem">${food.item}</span> <span class="foodPrice">${food.price}</span></li>
+                      </ul>
                     <div class="description">${food.description}</div>
-                    <div class="details"> ${food.allergies} ${food.favorite} ${food.spicy} ${food.vegan} </div>
                     `;
 
   $('.apps').append(appTemplate);
@@ -212,11 +211,10 @@ let display = function(obj){
 
   _.each(obj.entrees, function(food){
     console.log(obj.entrees);
-    var entreeTemplate = `
-                    <div class="item">${food.item}</div>
-                    <div class="price">${food.price}</div>
+    var entreeTemplate = `<ul class= ellipsis>
+                    <li><span class="foodItem">${food.item}</span> <span class="foodPrice">${food.price}</span></li>
+                      </ul>
                     <div class="description">${food.description}</div>
-                    <div class="details"> ${food.allergies} ${food.favorite} ${food.spicy} ${food.vegan} </div>
                     `;
   $('.entrees').append(entreeTemplate);
 
@@ -224,12 +222,10 @@ let display = function(obj){
 
   _.each(obj.sides, function(food){
     console.log(obj.sides);
-    var sidesTemplate = `
-                    <div class="item">${food.item}</div>
-                    <div class="price">${food.price}</div>
-                    </div>
+    var sidesTemplate = `<ul class= ellipsis>
+                    <li><span class="foodItem">${food.item}</span> <span class="foodPrice">${food.price}</span></li>
+                      </ul>
                     <div class="description">${food.description}</div>
-                    <div class="details"> ${food.allergies} ${food.favorite} ${food.spicy} ${food.vegan} </div>
                     `;
   $('.sides').append(sidesTemplate);
 

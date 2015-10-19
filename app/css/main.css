@@ -258,14 +258,38 @@ img {
             display: block; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 {
             font-size: 1.6em; }
-            #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 .item {
+            #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 ul.ellipsis {
+              max-width: 100%;
+              margin-right: 0;
+              padding: 0;
+              overflow-x: hidden;
+              list-style: none;
+              line-height: 30px; }
+            #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 ul.ellipsis li:after {
+              float: left;
+              width: 0;
+              white-space: nowrap;
+              content: ". . . . . . . . . . . . . . . . . . . . "                        ". . . . . . . . . . . . . . . . . . . . "                        ". . . . . . . . . . . . . . . . . . . . "                        ". . . . . . . . . . . . . . . . . .  "                        ". . . . . . . . "; }
+            #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 ul.ellipsis span:first-child {
+              background: white; }
+            #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 ul.ellipsis span + span {
+              float: right;
+              background: white; }
+            #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 .foodPrice {
+              float: right; }
+            #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 .foodItem {
               font-weight: bold; }
+            #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 .item {
+              font-weight: bold;
+              width: 60%; }
             #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 .description {
-              width: 90%; }
+              width: 75%;
+              font-style: italic; }
             #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 .item, #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 .price {
               display: inline-block; }
             #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 .price {
-              float: right; }
+              float: right;
+              width: 10%; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab3 form {
             display: block;
             font-size: 2em;
