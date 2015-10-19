@@ -395,7 +395,9 @@ img {
 
 
         // ============MotherEffing Menu {o_0}========================================
-
+        #tab1 {
+          font-size: 2em;
+        }
         #tab2{
          font-size: 1.6em;
 
@@ -547,6 +549,15 @@ img {
     a:visited {
     color: #F366F3;
   }
+  #logo1 {
+        
+
+          img{
+              width: 30%;
+             
+
+          }
+        } //end of logo
 
   #enterTitle {
     margin: 0 auto;

@@ -278,6 +278,8 @@ img {
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper .tabContent.open {
             display: block;
             border-radius: 0 3px 3px 3px; }
+          #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab1 {
+            font-size: 2em; }
           #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 {
             font-size: 1.6em; }
             #mainPage #containerWrapper #container2 #dynamicContent .tabWrapper #tab2 ul.ellipsis {
@@ -373,6 +375,8 @@ img {
   background: #D6FFF2; }
   #pageWrapper a:visited {
     color: #F366F3; }
+  #pageWrapper #logo1 img {
+    width: 30%; }
   #pageWrapper #enterTitle {
     margin: 0 auto;
     padding: 50px;
