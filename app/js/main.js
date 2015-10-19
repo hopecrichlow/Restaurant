@@ -13,11 +13,7 @@
     console.log(newsobject);
 
     // ********TEMPLATE FOR NEWS*************
-<<<<<<< HEAD
-    var newsTemplate = "\n<h3 class='heading'> Latest News</h3>\n<hr>\n<div class=\"data1\">\n  <div class=\"content\"> \n      <h3 id=\"nh1\">" + newsobject.title + " </h3>\n      <h3  id=\"nh2\">" + newsobject.date_published + "</h3>\n  </div>\n  <p> " + newsobject.post + " </p>\n</div>";
-=======
     var newsTemplate = "\n<h3 class='heading'> Latest News</h3>\n<hr>\n<div class=\"data1\">\n  <div class=\"content\">\n      <h3 id=\"nh1\">" + newsobject.title + " </h3>\n      <h3  id=\"nh2\">" + newsobject.date_published + "</h3>\n  </div> //end of content\n  <div id=\"post\"><p> " + newsobject.post + " </p></div>\n</div>";
->>>>>>> 1ea1c5d8af89cc0382e35058a9b6310fd6e07688
     $('#latestNews').append(newsTemplate); // ***********APPEND to HTML
   });
 })(); //end of IIFE01
@@ -164,15 +160,52 @@
     var images = _.first(obj.photos.photo, [4]);
 
     _.each(images, function (image) {
-      //console.log(image);
+      console.log(image);
       //build a URL according to the API manual
       var flickrURL = "http://farm" + image.farm + ".static.flickr.com/" + image.server + "/" + image.id + "_" + image.secret + ".jpg";
       //build a TEMPLATE to insert into the HTML
       var foodPhoto = "\n    <div class=\"foodPhotos\">\n    <img src=\"" + flickrURL + "\" />\n    </div>";
-      console.dir(slideshow);
+      // console.dir(slideshow);
       $('#foodPhotosContainer').append(foodPhoto);
     }); //end of _.each
   }); //end of AJAX Call
 })(); //end of IIFE05
 
-// ------------------------------------------------
+// IIFEMenu
+
+(function () {
+  var url = 'https://json-data.herokuapp.com/restaurant/menu/1';
+  // Go fetch our data and do something with it
+  var promise = $.getJSON(url);
+  promise.then(function (response) {
+    display(response);
+    console.log(response);
+  });
+
+  // display
+  var display = function display(obj) {
+    console.log(obj.appetizers);
+    _.each(obj.appetizers, function (food) {
+
+      if (food.allergies === 1) {
+        return "<img src=\"../images/duck_face.png\">";
+      }
+      var appTemplate = "<ul class= ellipsis>\n                    <li><span class=\"foodItem\">" + food.item + "</span> <span class=\"foodPrice\">" + food.price + "</span></li>\n                      </ul>\n                    <div class=\"description\">" + food.description + "</div>\n                    ";
+
+      $('.apps').append(appTemplate);
+    });
+
+    _.each(obj.entrees, function (food) {
+      console.log(obj.entrees);
+      var entreeTemplate = "<ul class= ellipsis>\n                    <li><span class=\"foodItem\">" + food.item + "</span> <span class=\"foodPrice\">" + food.price + "</span></li>\n                      </ul>\n                    <div class=\"description\">" + food.description + "</div>\n                    ";
+      $('.entrees').append(entreeTemplate);
+    });
+
+    _.each(obj.sides, function (food) {
+      console.log(obj.sides);
+      var sidesTemplate = "<ul class= ellipsis>\n                    <li><span class=\"foodItem\">" + food.item + "</span> <span class=\"foodPrice\">" + food.price + "</span></li>\n                      </ul>\n                    <div class=\"description\">" + food.description + "</div>\n                    ";
+      $('.sides').append(sidesTemplate);
+    });
+  };
+})(); //end of IIFEMenu
+// -----------------------------------------------
